@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temesgen M. | Professional Video Editor</title>
+    <title>Temesgen M. | Elite Video Editor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -20,6 +20,19 @@
         .glow-hover:hover { border-color: #3b82f6; box-shadow: 0 0 40px rgba(59, 130, 246, 0.25); transform: translateY(-5px); }
         .software-card { background: #0c0c0c; border: 1px solid #222; padding: 20px; border-radius: 20px; text-align: center; }
         .skill-tag { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); padding: 6px 16px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; color: #60a5fa; text-transform: uppercase; font-style: italic; }
+        
+        /* Floating Hire Me Button */
+        .floating-hire {
+            position: fixed; bottom: 30px; right: 30px; z-index: 1000;
+            background: #14a800; color: white; padding: 15px 25px;
+            border-radius: 50px; font-weight: 900; font-size: 14px;
+            box-shadow: 0 10px 30px rgba(20, 168, 0, 0.4);
+            display: flex; align-items: center; gap: 10px;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        .floating-hire:hover { transform: scale(1.1) translateY(-5px); background: #18c000; }
+        
         details > summary { list-style: none; cursor: pointer; }
         details > summary::-webkit-details-marker { display: none; }
     </style>
@@ -27,12 +40,16 @@
 <body class="overflow-x-hidden">
     <div class="studio-bg"></div>
 
+    <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="floating-hire">
+        <i class="fab fa-upwork text-xl"></i> Hire Me
+    </a>
+
     <header class="pt-24 pb-16 px-6 text-center">
         <div class="mb-10 relative inline-block">
             <img src="me.jpg" class="w-40 h-40 rounded-full border-4 border-blue-500 mx-auto object-cover shadow-2xl">
             <div class="absolute -bottom-2 -right-2 bg-blue-600 text-white text-[9px] font-black px-4 py-2 rounded-full uppercase">Available Now</div>
         </div>
-        <h1 class="hero-text text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
+        <h1 class="hero-text text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Elite <span class="text-blue-500">Short-Form</span> <br> Video Editor
         </h1>
         <div class="flex items-center justify-center gap-2 text-gray-500 text-xs mb-12 uppercase tracking-[5px] font-bold">
@@ -56,38 +73,38 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="glass p-8 text-center glow-hover">
                 <div class="mb-6 bg-white/5 py-12 rounded-2xl"><i class="fas fa-play text-4xl text-blue-500"></i></div>
-                <a href="https://drive.google.com/file/d/1yS9-9R1YzZrpfK6yv3zLSmPFhPAXEMiK/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest hover:bg-blue-700 transition">Watch Reel 1</a>
+                <a href="https://drive.google.com/file/d/1yS9-9R1YzZrpfK6yv3zLSmPFhPAXEMiK/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest">Watch Reel 1</a>
             </div>
             <div class="glass p-8 text-center glow-hover">
                 <div class="mb-6 bg-white/5 py-12 rounded-2xl"><i class="fas fa-play text-4xl text-blue-500"></i></div>
-                <a href="https://drive.google.com/file/d/14QSUjALRI3PIKI1ttR9jRYi5jzG79cFP/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest hover:bg-blue-700 transition">Watch Reel 2</a>
+                <a href="https://drive.google.com/file/d/14QSUjALRI3PIKI1ttR9jRYi5jzG79cFP/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest">Watch Reel 2</a>
             </div>
             <div class="glass p-8 text-center glow-hover">
                 <div class="mb-6 bg-white/5 py-12 rounded-2xl"><i class="fas fa-play text-4xl text-blue-500"></i></div>
-                <a href="https://drive.google.com/file/d/1JPi6w8gIH7n2Wi6l7C3O5vfYSDPHHT2m/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest hover:bg-blue-700 transition">Watch Reel 3</a>
+                <a href="https://drive.google.com/file/d/1JPi6w8gIH7n2Wi6l7C3O5vfYSDPHHT2m/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest">Watch Reel 3</a>
             </div>
-            <div class="glass p-8 text-center glow-hover border-blue-500/20">
+            <div class="glass p-8 text-center glow-hover border-emerald-500/20">
                 <div class="mb-4 text-emerald-500 text-[10px] font-bold uppercase tracking-widest italic">Before vs After</div>
                 <div class="mb-6 bg-white/5 py-12 rounded-2xl"><i class="fas fa-wand-magic-sparkles text-4xl text-blue-500"></i></div>
-                <a href="https://drive.google.com/file/d/1ugvhs37BP08h7DfBIEa0U3miBMj2_uI6/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest hover:bg-blue-700 transition">Transformation A</a>
+                <a href="https://drive.google.com/file/d/1ugvhs37BP08h7DfBIEa0U3miBMj2_uI6/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest">Transformation A</a>
             </div>
-            <div class="glass p-8 text-center glow-hover border-blue-500/20">
+            <div class="glass p-8 text-center glow-hover border-emerald-500/20">
                 <div class="mb-4 text-emerald-500 text-[10px] font-bold uppercase tracking-widest italic">Before vs After</div>
                 <div class="mb-6 bg-white/5 py-12 rounded-2xl"><i class="fas fa-wand-magic-sparkles text-4xl text-blue-500"></i></div>
-                <a href="https://drive.google.com/file/d/1W4kWWL6s0wL7dTAttJMJhroZANxuruJx/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest hover:bg-blue-700 transition">Transformation B</a>
+                <a href="https://drive.google.com/file/d/1W4kWWL6s0wL7dTAttJMJhroZANxuruJx/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest">Transformation B</a>
             </div>
-            <div class="glass p-8 text-center glow-hover border-blue-500/20">
+            <div class="glass p-8 text-center glow-hover border-emerald-500/20">
                 <div class="mb-4 text-emerald-500 text-[10px] font-bold uppercase tracking-widest italic">Before vs After</div>
                 <div class="mb-6 bg-white/5 py-12 rounded-2xl"><i class="fas fa-wand-magic-sparkles text-4xl text-blue-500"></i></div>
-                <a href="https://drive.google.com/file/d/1mvFWIX-5dLXyq2Y3PjWXMfjik5oAvMN1/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest hover:bg-blue-700 transition">Transformation C</a>
+                <a href="https://drive.google.com/file/d/1mvFWIX-5dLXyq2Y3PjWXMfjik5oAvMN1/view" target="_blank" class="block w-full bg-blue-600 py-4 rounded-xl font-black uppercase text-xs tracking-widest">Transformation C</a>
             </div>
         </div>
     </section>
 
     <section class="max-w-5xl mx-auto px-6 py-10 text-center">
         <div class="glass p-12 border-2 border-emerald-500/30 bg-emerald-500/5 glow-hover">
-            <h3 class="text-3xl font-black mb-6 text-emerald-500 tracking-tighter uppercase italic">Ready to Go Viral?</h3>
-            <p class="text-gray-300 mb-10 max-w-lg mx-auto text-sm uppercase tracking-widest font-bold">Get high-retention video edits delivered with priority. Order my package on Upwork today.</p>
+            <h3 class="text-3xl font-black mb-6 text-emerald-500 tracking-tighter uppercase italic">Instant Professional Edits</h3>
+            <p class="text-gray-300 mb-10 max-w-lg mx-auto text-sm uppercase tracking-widest font-bold">Purchase my high-retention video package directly on Upwork for the fastest turnaround.</p>
             <a href="https://www.upwork.com/services/product/video-audio-i-will-edit-viral-short-form-videos-for-tiktok-reels-and-shorts-2016947897201589570" target="_blank" class="bg-emerald-600 text-white px-12 py-5 rounded-2xl font-black text-lg hover:scale-105 transition shadow-2xl inline-block">BUY PROJECT CATALOG</a>
         </div>
     </section>
@@ -112,7 +129,7 @@
                 </div>
             </div>
             <div class="glass p-10">
-                <h3 class="text-xl font-black mb-10 uppercase tracking-widest text-blue-500 italic font-bold">Core Skills</h3>
+                <h3 class="text-xl font-black mb-10 uppercase tracking-widest text-blue-500 italic font-bold">Expertise</h3>
                 <div class="flex flex-wrap gap-3">
                     <span class="skill-tag">Retention Design</span>
                     <span class="skill-tag">Viral Storytelling</span>
@@ -121,7 +138,6 @@
                     <span class="skill-tag">Dynamic Captions</span>
                     <span class="skill-tag">Color Grading</span>
                 </div>
-                <p class="mt-8 text-gray-500 text-[10px] leading-relaxed uppercase tracking-[5px]">Expertise in Reels, Shorts, and TikTok Growth.</p>
             </div>
         </div>
     </section>
@@ -129,17 +145,17 @@
     <section class="max-w-6xl mx-auto px-6 py-10">
         <h2 class="text-center text-gray-500 uppercase tracking-[15px] text-[10px] font-black mb-16 italic font-bold">Client Success Stories</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center font-medium">
-            <div class="glass p-8 border-b-2 border-yellow-500/20">
+            <div class="glass p-8 border-b-2 border-yellow-500/20 shadow-xl">
                 <div class="flex justify-center gap-1 text-yellow-500 mb-4 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="text-gray-400 italic text-xs mb-6 leading-relaxed">"Tomi is an exceptional editor. Delivered high-quality work on time and understood the vision perfectly."</p>
                 <p class="font-black text-blue-500 text-[10px] uppercase">Alice Brin • Upwork Client</p>
             </div>
-            <div class="glass p-8 border-b-2 border-yellow-500/20">
+            <div class="glass p-8 border-b-2 border-yellow-500/20 shadow-xl">
                 <div class="flex justify-center gap-1 text-yellow-500 mb-4 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="text-gray-400 italic text-xs mb-6 leading-relaxed">"Master of retention editing. My engagement spike significantly since we started working together."</p>
                 <p class="font-black text-blue-500 text-[10px] uppercase">Jason D. • Influencer</p>
             </div>
-            <div class="glass p-8 border-b-2 border-yellow-500/20">
+            <div class="glass p-8 border-b-2 border-yellow-500/20 shadow-xl">
                 <div class="flex justify-center gap-1 text-yellow-500 mb-4 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="text-gray-400 italic text-xs mb-6 leading-relaxed">"Visual storytelling at its finest. He knows how to hook an audience immediately."</p>
                 <p class="font-black text-blue-500 text-[10px] uppercase">Mark K. • Content Lead</p>
@@ -148,28 +164,21 @@
     </section>
 
     <section class="max-w-4xl mx-auto px-6 py-20">
-        <h2 class="text-center text-gray-500 uppercase tracking-[15px] text-[10px] font-black mb-16 italic font-bold">Frequently Asked Questions</h2>
+        <h2 class="text-center text-gray-500 uppercase tracking-[15px] text-[10px] font-black mb-16 italic font-bold">FAQs</h2>
         <div class="space-y-4">
             <details class="glass p-6 glow-hover group">
                 <summary class="flex justify-between items-center font-bold uppercase text-sm tracking-widest">
-                    What is your delivery time?
+                    What is your turnaround time?
                     <i class="fas fa-chevron-down text-blue-500 group-open:rotate-180 transition"></i>
                 </summary>
-                <p class="mt-4 text-gray-400 text-sm leading-relaxed">Typically 24-48 hours per video, depending on the complexity and style.</p>
+                <p class="mt-4 text-gray-400 text-sm leading-relaxed">Standard delivery is within 24-48 hours per video.</p>
             </details>
             <details class="glass p-6 glow-hover group">
                 <summary class="flex justify-between items-center font-bold uppercase text-sm tracking-widest">
                     Do you offer revisions?
                     <i class="fas fa-chevron-down text-blue-500 group-open:rotate-180 transition"></i>
                 </summary>
-                <p class="mt-4 text-gray-400 text-sm leading-relaxed">Yes! Client satisfaction is priority. I offer revisions to ensure the final product meets your vision.</p>
-            </details>
-            <details class="glass p-6 glow-hover group">
-                <summary class="flex justify-between items-center font-bold uppercase text-sm tracking-widest">
-                    Can you edit for any niche?
-                    <i class="fas fa-chevron-down text-blue-500 group-open:rotate-180 transition"></i>
-                </summary>
-                <p class="mt-4 text-gray-400 text-sm leading-relaxed">Absolutely. From Business and E-commerce to Fitness and Entertainment, I adapt my style to your niche.</p>
+                <p class="mt-4 text-gray-400 text-sm leading-relaxed">Yes, I provide unlimited revisions until you are 100% satisfied with the result.</p>
             </details>
         </div>
     </section>
