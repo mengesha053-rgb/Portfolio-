@@ -13,13 +13,14 @@
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: radial-gradient(circle at 50% -20%, #1e3a8a 0%, transparent 50%),
                         url('https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=2000&auto=format&fit=crop');
-            background-size: cover; opacity: 0.08; z-index: -1; filter: saturate(0);
+            background-size: cover; opacity: 0.1; z-index: -1; filter: saturate(0);
         }
-        .glass { background: rgba(10, 10, 10, 0.8); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(20px); border-radius: 32px; }
-        .hero-text { font-family: 'Syncopate', sans-serif; }
-        .glow-card:hover { border-color: #3b82f6; box-shadow: 0 0 30px rgba(59, 130, 246, 0.2); transform: translateY(-5px); transition: 0.4s; }
-        .soft-badge { background: #111; border: 1px solid #222; padding: 15px; border-radius: 20px; text-align: center; }
-        .skill-tag { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); padding: 5px 15px; border-radius: 100px; font-size: 0.75rem; font-weight: 700; color: #60a5fa; }
+        .glass { background: rgba(10, 10, 10, 0.85); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(25px); border-radius: 32px; transition: 0.4s; }
+        .hero-text { font-family: 'Syncopate', sans-serif; text-transform: uppercase; }
+        .glow-card:hover { border-color: #3b82f6; box-shadow: 0 0 30px rgba(59, 130, 246, 0.2); transform: translateY(-8px); }
+        .soft-badge { background: #0a0a0a; border: 1px solid #333; padding: 20px; border-radius: 24px; text-align: center; transition: 0.3s; }
+        .soft-badge:hover { border-color: #3b82f6; background: #111; }
+        .skill-tag { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); padding: 8px 18px; border-radius: 100px; font-size: 0.8rem; font-weight: 700; color: #60a5fa; }
     </style>
 </head>
 <body class="overflow-x-hidden">
@@ -28,96 +29,116 @@
     <header class="pt-24 pb-16 px-6 text-center">
         <div class="mb-10 relative inline-block">
             <img src="me.jpg" class="w-44 h-44 rounded-full border-4 border-blue-500 mx-auto object-cover shadow-[0_0_60px_rgba(59,130,246,0.4)]">
-            <div class="absolute -bottom-2 -right-2 bg-emerald-500 text-black text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-tighter">Available for Hire</div>
+            <div class="absolute -bottom-2 -right-2 bg-blue-600 text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-tighter">Verified Pro</div>
         </div>
         <h1 class="hero-text text-3xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight tracking-tighter">
-            High-Retention Short-Form <br> <span class="text-blue-500">Video Editor</span>
+            High-Retention <br> <span class="text-blue-500">Short-Form Editor</span>
         </h1>
         
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="glass px-6 py-4 flex items-center gap-3 glow-card">
-                <i class="fab fa-upwork text-[#14a800] text-2xl"></i> <span class="text-sm font-bold">Upwork</span>
+        <div class="flex flex-wrap justify-center gap-6 mb-12 text-sm font-bold text-emerald-400">
+            <span><i class="fas fa-bolt mr-2"></i> FAST TURNAROUND</span>
+            <span><i class="fas fa-comment-dots mr-2"></i> QUICK RESPONSE</span>
+            <span><i class="fas fa-map-marker-alt mr-2"></i> ADDIS ABABA, ETHIOPIA</span>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-16">
+            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="glass px-8 py-5 flex items-center gap-3 glow-card">
+                <i class="fab fa-upwork text-[#14a800] text-3xl"></i> <span class="text-sm font-black uppercase">Upwork</span>
             </a>
-            <a href="https://www.linkedin.com/in/temesgen-m-8192783a4" target="_blank" class="glass px-6 py-4 flex items-center gap-3 glow-card">
-                <i class="fab fa-linkedin text-[#0077b5] text-2xl"></i> <span class="text-sm font-bold">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/temesgen-m-8192783a4" target="_blank" class="glass px-8 py-5 flex items-center gap-3 glow-card">
+                <i class="fab fa-linkedin text-[#0077b5] text-3xl"></i> <span class="text-sm font-black uppercase">LinkedIn</span>
             </a>
-            <a href="mailto:mengesha053@gmail.com" class="glass px-6 py-4 flex items-center gap-3 glow-card">
-                <i class="fas fa-envelope text-[#ea4335] text-2xl"></i> <span class="text-sm font-bold">mengesha053@gmail.com</span>
+            <a href="mailto:mengesha053@gmail.com" class="glass px-8 py-5 flex items-center gap-3 glow-card">
+                <i class="fas fa-envelope text-[#ea4335] text-3xl"></i> <span class="text-sm font-black lowercase">mengesha053@gmail.com</span>
             </a>
         </div>
     </header>
 
     <section class="max-w-6xl mx-auto px-6 py-12">
-        <h2 class="text-center text-gray-500 uppercase tracking-[10px] text-xs font-black mb-16">Portfolio Highlights</h2>
+        <h2 class="text-center text-gray-500 uppercase tracking-[12px] text-xs font-black mb-16">Featured Creations</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div class="glass p-10 text-center glow-card border-b-4 border-blue-600">
-                <div class="mb-8 bg-white/5 py-12 rounded-3xl"><i class="fas fa-play text-5xl text-blue-500 animate-pulse"></i></div>
-                <a href="https://drive.google.com/file/d/1yS9-9R1YzZrpfK6yv3zLSmPFhPAXEMiK/view" target="_blank" class="block w-full bg-blue-600 py-5 rounded-2xl font-black uppercase hover:bg-blue-700 transition">Watch Reel 1</a>
+                <div class="mb-8 bg-blue-500/5 py-12 rounded-3xl border border-white/5"><i class="fas fa-play text-5xl text-blue-500 animate-pulse"></i></div>
+                <a href="https://drive.google.com/file/d/1yS9-9R1YzZrpfK6yv3zLSmPFhPAXEMiK/view" target="_blank" class="block w-full bg-blue-600 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-blue-700 transition">Watch Reel 1</a>
             </div>
             <div class="glass p-10 text-center glow-card border-b-4 border-blue-600">
-                <div class="mb-8 bg-white/5 py-12 rounded-3xl"><i class="fas fa-play text-5xl text-blue-500 animate-pulse"></i></div>
-                <a href="https://drive.google.com/file/d/14QSUjALRI3PIKI1ttR9jRYi5jzG79cFP/view" target="_blank" class="block w-full bg-blue-600 py-5 rounded-2xl font-black uppercase hover:bg-blue-700 transition">Watch Reel 2</a>
+                <div class="mb-8 bg-blue-500/5 py-12 rounded-3xl border border-white/5"><i class="fas fa-play text-5xl text-blue-500 animate-pulse"></i></div>
+                <a href="https://drive.google.com/file/d/14QSUjALRI3PIKI1ttR9jRYi5jzG79cFP/view" target="_blank" class="block w-full bg-blue-600 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-blue-700 transition">Watch Reel 2</a>
             </div>
             <div class="glass p-10 text-center glow-card border-b-4 border-blue-600">
-                <div class="mb-8 bg-white/5 py-12 rounded-3xl"><i class="fas fa-play text-5xl text-blue-500 animate-pulse"></i></div>
-                <a href="https://drive.google.com/file/d/1JPi6w8gIH7n2Wi6l7C3O5vfYSDPHHT2m/view" target="_blank" class="block w-full bg-blue-600 py-5 rounded-2xl font-black uppercase hover:bg-blue-700 transition">Watch Reel 3</a>
+                <div class="mb-8 bg-blue-500/5 py-12 rounded-3xl border border-white/5"><i class="fas fa-play text-5xl text-blue-500 animate-pulse"></i></div>
+                <a href="https://drive.google.com/file/d/1JPi6w8gIH7n2Wi6l7C3O5vfYSDPHHT2m/view" target="_blank" class="block w-full bg-blue-600 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-blue-700 transition">Watch Reel 3</a>
             </div>
         </div>
     </section>
 
     <section class="max-w-6xl mx-auto px-6 py-20">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div class="glass p-12">
-                <h3 class="text-2xl font-black mb-10 text-blue-400">Software Stack</h3>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="soft-badge"><i class="fas fa-file-video text-blue-400 mb-2"></i><p class="text-xs font-bold">Premiere Pro</p></div>
-                    <div class="soft-badge"><i class="fas fa-magic text-purple-400 mb-2"></i><p class="text-xs font-bold">After Effects</p></div>
-                    <div class="soft-badge"><i class="fas fa-adjust text-orange-400 mb-2"></i><p class="text-xs font-bold">DaVinci Resolve</p></div>
-                    <div class="soft-badge"><i class="fas fa-images text-cyan-400 mb-2"></i><p class="text-xs font-bold">Photoshop</p></div>
+            <div class="glass p-12 border-l-4 border-blue-500">
+                <h3 class="text-2xl font-black mb-12 uppercase tracking-tighter">Software Stack</h3>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="soft-badge">
+                        <i class="fas fa-clapperboard text-4xl text-blue-400 mb-4"></i>
+                        <p class="font-bold text-sm">Premiere Pro</p>
+                    </div>
+                    <div class="soft-badge">
+                        <i class="fas fa-wand-magic-sparkles text-4xl text-purple-400 mb-4"></i>
+                        <p class="font-bold text-sm">After Effects</p>
+                    </div>
+                    <div class="soft-badge">
+                        <i class="fas fa-video text-4xl text-emerald-400 mb-4"></i>
+                        <p class="font-bold text-sm italic underline decoration-emerald-500">CapCut Pro</p>
+                    </div>
+                    <div class="soft-badge">
+                        <i class="fas fa-bolt text-4xl text-yellow-500 mb-4"></i>
+                        <p class="font-bold text-sm">Fast Tools</p>
+                    </div>
                 </div>
             </div>
-            <div class="glass p-12">
-                <h3 class="text-2xl font-black mb-10 text-blue-400">Expertise</h3>
-                <div class="flex flex-wrap gap-3">
-                    <span class="skill-tag italic">#MotionGraphics</span>
-                    <span class="skill-tag italic">#VisualStorytelling</span>
-                    <span class="skill-tag italic">#ColorGrading</span>
-                    <span class="skill-tag italic">#SoundDesign</span>
-                    <span class="skill-tag italic">#RetentionOptimization</span>
-                    <span class="skill-tag italic">#KineticTypography</span>
-                    <span class="skill-tag italic">#AIVideoTools</span>
-                    <span class="skill-tag italic">#HighEnergyEdits</span>
+            <div class="glass p-12 border-r-4 border-blue-500">
+                <h3 class="text-2xl font-black mb-12 uppercase tracking-tighter">Master Expertise</h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="skill-tag">#MotionGraphics</span>
+                    <span class="skill-tag">#VisualStorytelling</span>
+                    <span class="skill-tag">#DynamicTransitions</span>
+                    <span class="skill-tag">#AdvancedHooks</span>
+                    <span class="skill-tag">#SoundDesign</span>
+                    <span class="skill-tag">#RetentionMarketing</span>
+                    <span class="skill-tag">#KineticTypography</span>
+                    <span class="skill-tag">#ShortFormExpert</span>
                 </div>
-                <p class="mt-8 text-gray-400 text-sm leading-relaxed">Focused on creating content that stops the scroll and keeps viewers watching until the last second.</p>
+                <div class="mt-12 p-6 bg-white/5 rounded-2xl border border-white/5">
+                    <p class="text-gray-300 leading-relaxed italic">"I specialize in creating content that doesn't just look good, but performs. My focus is on high-retention editing that keeps viewers engaged from start to finish."</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="max-w-5xl mx-auto px-6 py-10">
-        <div class="glass p-12 border-2 border-emerald-500/30 bg-emerald-500/5 text-center relative overflow-hidden">
-            <h3 class="text-3xl font-black mb-6 text-emerald-400 uppercase tracking-tighter">Direct Order Catalog 🚀</h3>
-            <p class="text-gray-300 mb-10 text-lg max-w-xl mx-auto">Get your viral shorts edited without the long hiring process. Instant quality, guaranteed.</p>
-            <a href="https://www.upwork.com/services/product/video-audio-i-will-edit-viral-short-form-videos-for-tiktok-reels-and-shorts-2016947897201589570?ref=project_share" target="_blank" class="bg-emerald-500 text-black px-16 py-6 rounded-2xl font-black text-xl hover:scale-105 transition shadow-[0_20px_40px_rgba(16,185,129,0.3)]">BUY ON UPWORK</a>
+        <div class="glass p-14 border-2 border-emerald-500/40 bg-emerald-500/5 text-center relative overflow-hidden group">
+            <h3 class="text-4xl font-black mb-6 text-emerald-400 uppercase tracking-tighter italic">Viral Growth Starts Here 🚀</h3>
+            <p class="text-gray-300 mb-10 text-xl font-light">Skip the proposal! Order my professional editing package directly on Upwork for the fastest turnaround.</p>
+            <a href="https://www.upwork.com/services/product/video-audio-i-will-edit-viral-short-form-videos-for-tiktok-reels-and-shorts-2016947897201589570?ref=project_share" target="_blank" class="bg-emerald-500 text-black px-16 py-6 rounded-2xl font-black text-2xl hover:scale-110 transition shadow-[0_20px_60px_rgba(16,185,129,0.3)] inline-block">BUY PROJECT CATALOG</a>
         </div>
     </section>
 
     <section class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-center text-gray-500 uppercase tracking-[10px] text-xs font-black mb-16">Client Testimonials</h2>
+        <h2 class="text-center text-gray-600 uppercase tracking-[15px] text-xs font-black mb-16">Verified Reviews</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass p-10 border-t-2 border-blue-500/50">
+            <div class="glass p-10 border-t-2 border-yellow-500/30 bg-white/2">
                 <div class="flex gap-1 text-yellow-500 mb-6 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="text-gray-400 italic mb-8 text-sm">"Tomi is a retention master. My engagement spiked after he took over my editing."</p>
-                <p class="font-bold text-blue-400 text-xs tracking-widest uppercase">Jason D. <span class="text-gray-600 font-normal block">Influencer</span></p>
+                <p class="font-black text-blue-500 text-[10px] tracking-widest uppercase">Jason D. • <span class="text-gray-600">Influencer</span></p>
             </div>
-            <div class="glass p-10 border-t-2 border-blue-500/50">
+            <div class="glass p-10 border-t-2 border-yellow-500/30 bg-white/2">
                 <div class="flex gap-1 text-yellow-500 mb-6 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p class="text-gray-400 italic mb-8 text-sm">"Incredible motion graphics and always on time. A professional in every sense."</p>
-                <p class="font-bold text-blue-400 text-xs tracking-widest uppercase">Alice Brin <span class="text-gray-600 font-normal block">E-com Founder</span></p>
+                <p class="text-gray-400 italic mb-8 text-sm">"Incredible graphics and always on time. Fast turnaround as promised. Highly professional."</p>
+                <p class="font-black text-blue-500 text-[10px] tracking-widest uppercase">Alice Brin • <span class="text-gray-600">E-com Founder</span></p>
             </div>
-            <div class="glass p-10 border-t-2 border-blue-500/50">
+            <div class="glass p-10 border-t-2 border-yellow-500/30 bg-white/2">
                 <div class="flex gap-1 text-yellow-500 mb-6 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p class="text-gray-400 italic mb-8 text-sm">"Visual storytelling at its finest. He knows how to keep an audience hooked."</p>
-                <p class="font-bold text-blue-400 text-xs tracking-widest uppercase">Mark K. <span class="text-gray-600 font-normal block">Content Lead</span></p>
+                <p class="text-gray-400 italic mb-8 text-sm">"Visual storytelling at its finest. He knows exactly how to hook an audience."</p>
+                <p class="font-black text-blue-500 text-[10px] tracking-widest uppercase">Mark K. • <span class="text-gray-600">Content Lead</span></p>
             </div>
         </div>
     </section>
@@ -127,23 +148,24 @@
             <div class="space-y-12">
                 <div>
                     <div class="flex justify-between mb-4 font-black text-xs uppercase tracking-widest text-blue-400"><span>English Fluency</span><span>100%</span></div>
-                    <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden border border-white/5"><div class="bg-blue-600 h-full w-[100%]"></div></div>
+                    <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden border border-white/5 shadow-inner"><div class="bg-blue-600 h-full w-[100%] shadow-[0_0_15px_#2563eb]"></div></div>
                 </div>
                 <div>
                     <div class="flex justify-between mb-4 font-black text-xs uppercase tracking-widest text-emerald-400"><span>Amharic Native</span><span>100%</span></div>
-                    <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden border border-white/5"><div class="bg-emerald-600 h-full w-[100%]"></div></div>
+                    <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden border border-white/5 shadow-inner"><div class="bg-emerald-600 h-full w-[100%] shadow-[0_0_15px_#059669]"></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="text-center py-24 border-t border-white/5 mt-20 opacity-40">
-        <p class="hero-text text-[10px] tracking-[15px] mb-8 uppercase font-bold">Tomi Creative • Addis Ababa</p>
-        <div class="flex justify-center gap-10 text-2xl">
-            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank"><i class="fab fa-upwork"></i></a>
-            <a href="https://www.linkedin.com/in/temesgen-m-8192783a4" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:mengesha053@gmail.com"><i class="fas fa-envelope"></i></a>
+    <footer class="text-center py-24 border-t border-white/5 mt-20 opacity-30">
+        <p class="hero-text text-[10px] tracking-[20px] mb-8 uppercase font-bold text-gray-500">Tomi Creative • Addis Ababa</p>
+        <div class="flex justify-center gap-12 text-3xl">
+            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="hover:text-white transition"><i class="fab fa-upwork"></i></a>
+            <a href="https://www.linkedin.com/in/temesgen-m-8192783a4" target="_blank" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:mengesha053@gmail.com" class="hover:text-white transition"><i class="fas fa-envelope"></i></a>
         </div>
+        <p class="mt-10 text-[10px] font-bold">© 2026 PREMIUM VIDEO SOLUTIONS</p>
     </footer>
 </body>
 </html>
