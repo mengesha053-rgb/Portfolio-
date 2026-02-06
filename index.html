@@ -3,95 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temesgen M. | Portfolio</title>
+    <title>Temesgen M. | Professional Video Editor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background-color: #000; color: #fff; }
-        .video-card { background: #111; border: 1px solid #333; border-radius: 15px; overflow: hidden; }
+        body { background-color: #050505; color: #fff; scroll-behavior: smooth; }
+        .glass-card { background: rgba(25, 25, 25, 0.7); border: 1px solid #333; border-radius: 24px; transition: 0.4s; }
+        .glass-card:hover { border-color: #3b82f6; transform: translateY(-8px); box-shadow: 0 15px 40px rgba(59, 130, 246, 0.15); }
+        .nav-gradient { background: linear-gradient(to right, #3b82f6, #06b6d4); }
+        .section-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 3rem; text-align: center; }
     </style>
 </head>
 <body class="font-sans">
 
-    <header class="py-16 px-6 text-center bg-gradient-to-b from-blue-900/20 to-black">
-        <div class="flex justify-center mb-6">
-            <img src="me.jpg" alt="Temesgen" class="w-32 h-32 rounded-full border-4 border-blue-500 shadow-lg object-cover">
+    <header class="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+        <div class="relative mb-8">
+            <img src="me.jpg" alt="Temesgen M." class="w-44 h-44 rounded-full border-4 border-blue-500 shadow-[0_0_40px_rgba(59,130,246,0.4)] object-cover">
+            <div class="absolute -bottom-2 -right-2 bg-blue-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Available</div>
         </div>
-        
-        <h1 class="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
-            Temesgen M.
+        <h1 class="text-6xl md:text-8xl font-black mb-4 tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-600">
+            TEMESGEN M.
         </h1>
-        <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
-            High-Retention Short-Form Video Editor | Increase Your Views on Reels
+        <p class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto mb-8 font-light">
+            Crafting high-impact visual stories from <span class="text-white font-medium italic underline decoration-blue-500">Addis Ababa, Ethiopia</span>.
         </p>
+        
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-300">
+            <span><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i> Addis Ababa, Ethiopia</span>
+            <span><i class="fas fa-globe text-emerald-500 mr-2"></i> English & Amharic</span>
+        </div>
     </header>
 
-    <section class="max-w-6xl mx-auto px-6 py-12 text-center">
-        <h2 class="text-3xl font-bold mb-8"><i class="fas fa-play-circle mr-2 text-blue-400"></i> My Recent Work</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="video-card p-6">
-                <a href="https://drive.google.com/file/d/1yS9-9R1YzZrpfK6yv3zLSmPFhPAXEMiK/view" target="_blank" class="bg-blue-600 px-6 py-2 rounded-full font-bold">Watch Video 1</a>
+    <section class="max-w-6xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="glass-card p-10">
+            <h3 class="text-2xl font-bold mb-6 flex items-center gap-3 text-blue-400">
+                <i class="fas fa-language"></i> Languages
+            </h3>
+            <div class="space-y-6">
+                <div>
+                    <div class="flex justify-between mb-2"><span class="font-bold">English</span><span>Professional</span></div>
+                    <div class="w-full bg-gray-800 h-2 rounded-full"><div class="bg-blue-500 h-2 rounded-full w-[90%]"></div></div>
+                </div>
+                <div>
+                    <div class="flex justify-between mb-2"><span class="font-bold">Amharic (አማርኛ)</span><span>Native</span></div>
+                    <div class="w-full bg-gray-800 h-2 rounded-full"><div class="bg-emerald-500 h-2 rounded-full w-[100%]"></div></div>
+                </div>
             </div>
-            <div class="video-card p-6">
-                <a href="https://drive.google.com/file/d/14QSUjALRI3PIKI1ttR9jRYi5jzG79cFP/view" target="_blank" class="bg-blue-600 px-6 py-2 rounded-full font-bold">Watch Video 2</a>
-            </div>
-            <div class="video-card p-6">
-                <a href="https://drive.google.com/file/d/1JPi6w8gIH7n2Wi6l7C3O5vfYSDPHHT2m/view" target="_blank" class="bg-blue-600 px-6 py-2 rounded-full font-bold">Watch Video 3</a>
+        </div>
+
+        <div class="glass-card p-10">
+            <h3 class="text-2xl font-bold mb-6 flex items-center gap-3 text-blue-400">
+                <i class="fas fa-star"></i> Pro Skills
+            </h3>
+            <div class="grid grid-cols-2 gap-4">
+                <span class="bg-gray-900 border border-gray-800 p-3 rounded-xl text-center">Visual Storytelling</span>
+                <span class="bg-gray-900 border border-gray-800 p-3 rounded-xl text-center">Color Grading</span>
+                <span class="bg-gray-900 border border-gray-800 p-3 rounded-xl text-center">Sound Design</span>
+                <span class="bg-gray-900 border border-gray-800 p-3 rounded-xl text-center">Motion Graphics</span>
             </div>
         </div>
     </section>
 
-    <section class="py-20 text-center border-t border-gray-800">
-        <div class="flex flex-wrap justify-center gap-6">
-            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="bg-[#14a800] px-8 py-3 rounded-xl font-bold">Upwork Profile</a>
-            <a href="https://www.linkedin.com/in/temesgen-m-8192783a4" target="_blank" class="bg-[#0077b5] px-8 py-3 rounded-xl font-bold">LinkedIn Profile</a>
+    <section class="max-w-6xl mx-auto px-6 py-24">
+        <h2 class="section-title italic">My Best Work</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-10 text-center">
+                <i class="fas fa-play-circle text-5xl text-blue-500 mb-6"></i>
+                <a href="https://drive.google.com/file/d/1yS9-9R1YzZrpfK6yv3zLSmPFhPAXEMiK/view" target="_blank" class="block w-full bg-blue-600 py-3 rounded-xl font-bold hover:bg-blue-700 transition">Watch Reel 1</a>
+            </div>
+            <div class="glass-card p-10 text-center">
+                <i class="fas fa-play-circle text-5xl text-blue-500 mb-6"></i>
+                <a href="https://drive.google.com/file/d/14QSUjALRI3PIKI1ttR9jRYi5jzG79cFP/view" target="_blank" class="block w-full bg-blue-600 py-3 rounded-xl font-bold hover:bg-blue-700 transition">Watch Reel 2</a>
+            </div>
+            <div class="glass-card p-10 text-center">
+                <i class="fas fa-play-circle text-5xl text-blue-500 mb-6"></i>
+                <a href="https://drive.google.com/file/d/1JPi6w8gIH7n2Wi6l7C3O5vfYSDPHHT2m/view" target="_blank" class="block w-full bg-blue-600 py-3 rounded-xl font-bold hover:bg-blue-700 transition">Watch Reel 3</a>
+            </div>
         </div>
     </section>
 
-</body>
-</html>
-            <h2 style="text-align: center; font-size: 2.5rem;">Client Reviews</h2>
-            <div class="grid">
-                <div class="testimonial-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p>"Temesgen is a wizard! He turned my raw footage into a high-energy Reel that got 50k+ views in two days."</p>
-                    <div class="client-info">
-                        <div class="client-img">JD</div>
-                        <div><strong>Jason D.</strong><br><small>Content Creator</small></div>
-                    </div>
+    <section class="max-w-5xl mx-auto px-6 py-32 bg-[#0a0a0a] rounded-[3rem] border border-gray-900 text-center">
+        <h2 class="text-4xl font-black mb-4">WANT TO START A PROJECT?</h2>
+        <p class="text-gray-400 mb-16 max-w-xl mx-auto text-lg">
+            Simply click on any of the official platforms below to connect with me directly. I'm ready to bring your vision to life!
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="glass-card p-8 flex flex-col items-center gap-5 hover:bg-[#14a800]/10 border-b-4 border-[#14a800]">
+                <i class="fab fa-upwork text-5xl text-[#14a800]"></i>
+                <div>
+                    <span class="block font-black text-xl">UPWORK</span>
+                    <span class="text-xs text-gray-500 italic">Official Profile</span>
                 </div>
-
-                <div class="testimonial-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p>"The best short-form editor on Upwork. Alice Brin style captions and fast delivery. Highly recommended!"</p>
-                    <div class="client-info">
-                        <div class="client-img">AB</div>
-                        <div><strong>Alice Brin</strong><br><small>E-com Owner</small></div>
-                    </div>
+            </a>
+            <a href="https://www.linkedin.com/in/temesgen-m-8192783a4" target="_blank" class="glass-card p-8 flex flex-col items-center gap-5 hover:bg-[#0077b5]/10 border-b-4 border-[#0077b5]">
+                <i class="fab fa-linkedin text-5xl text-[#0077b5]"></i>
+                <div>
+                    <span class="block font-black text-xl">LINKEDIN</span>
+                    <span class="text-xs text-gray-500 italic">Professional Network</span>
                 </div>
-
-                <div class="testimonial-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p>"My audience retention jumped by 40% since Tomi started editing my YouTube Shorts. Professional work!"</p>
-                    <div class="client-info">
-                        <div class="client-img">MK</div>
-                        <div><strong>Mark K.</strong><br><small>Tech YouTuber</small></div>
-                    </div>
+            </a>
+            <a href="mailto:temesgen.video@gmail.com" class="glass-card p-8 flex flex-col items-center gap-5 hover:bg-[#ea4335]/10 border-b-4 border-[#ea4335]">
+                <i class="fas fa-envelope text-5xl text-[#ea4335]"></i>
+                <div>
+                    <span class="block font-black text-xl">GMAIL</span>
+                    <span class="text-xs text-gray-500 italic">Direct Inquiry</span>
                 </div>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <div class="container">
-            <h2>Let's Work Together</h2>
-            <div class="social-links">
-                <a href="mailto:mengesha053@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/temesgen-m-8192783a4" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank"><i class="fas fa-briefcase"></i></a>
-            </div>
-            <p style="margin-top: 20px; font-size: 0.8rem; color: #555;">&copy; 2026 Tomi Creative.</p>
+            </a>
         </div>
+        <p class="mt-16 text-emerald-400 font-medium tracking-widest uppercase text-sm animate-pulse">
+            <i class="fas fa-check-circle mr-2"></i> Fast response within 2 hours
+        </p>
+    </section>
+
+    <footer class="py-16 text-center text-gray-800 font-bold uppercase tracking-[10px] text-xs">
+        © 2026 TOMI CREATIVE | ADDIS ABABA, ETHIOPIA
     </footer>
 
 </body>
