@@ -3,124 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temesgen M. | High-Retention Video Editor</title>
+    <title>Temesgen M. | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { 
-            background: radial-gradient(circle at top, #0c1a33 0%, #050505 100%); 
-            color: #fff; 
-            scroll-behavior: smooth; 
-        }
-        .studio-bg {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
-            opacity: 0.05; z-index: -1; filter: grayscale(100%);
-        }
-        .glass-card { 
-            background: rgba(15, 15, 15, 0.85); 
-            border: 1px solid #333; 
-            border-radius: 24px; 
-            transition: 0.4s; 
-            backdrop-filter: blur(10px); 
-        }
-        .glass-card:hover { border-color: #3b82f6; transform: translateY(-8px); }
-        .hero-title { text-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
-        .btn-primary { background: #3b82f6; transition: 0.3s; }
-        .btn-primary:hover { background: #2563eb; transform: scale(1.05); }
+        body { background: #050505; color: #fff; font-family: sans-serif; }
+        .studio-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1000&auto=format&fit=crop') center/cover; opacity: 0.07; z-index: -1; }
+        .glass { background: rgba(20, 20, 20, 0.9); border: 1px solid #333; border-radius: 20px; padding: 25px; }
     </style>
 </head>
-<body class="font-sans">
+<body>
     <div class="studio-bg"></div>
 
-    <header class="min-h-screen flex flex-col items-center justify-center px-6 text-center">
-        <div class="relative mb-10">
-            <img src="me.jpg" alt="Temesgen M." class="w-48 h-48 rounded-full border-4 border-blue-500 shadow-[0_0_50px_rgba(59,130,246,0.5)] object-cover">
-            <div class="absolute -bottom-2 -right-2 bg-blue-600 px-6 py-2 rounded-full text-sm font-black uppercase">Open for Work</div>
-        </div>
-        <h1 class="text-4xl md:text-6xl font-black mb-6 hero-title leading-tight">
-            High-Retention Short-Form Video Editor | <span class="text-blue-400">Increase Your Views on Reels</span>
-        </h1>
-        <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">
-            Addis Ababa, Ethiopia | Visual Storyteller
-        </p>
+    <header class="py-20 px-6 text-center">
+        <img src="me.jpg" class="w-32 h-32 rounded-full border-4 border-blue-500 mx-auto mb-6 object-cover shadow-xl">
+        <h1 class="text-3xl md:text-5xl font-black mb-4">High-Retention Short-Form Video Editor | <span class="text-blue-400">Increase Your Views on Reels</span></h1>
+        <p class="text-gray-400 italic">Addis Ababa, Ethiopia | Visual Storyteller</p>
     </header>
 
-    <section class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-4xl font-black mb-16 text-center italic underline decoration-blue-500 underline-offset-8">Featured Work</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass-card p-8 flex flex-col items-center">
-                <div class="w-full h-48 bg-blue-900/10 rounded-xl mb-6 flex items-center justify-center border border-blue-900/30">
-                    <i class="fas fa-play text-5xl text-blue-500"></i>
-                </div>
-                <a href="https://drive.google.com/file/d/1yS9-9R1YzZrpfK6yv3zLSmPFhPAXEMiK/view" target="_blank" class="btn-primary w-full py-4 rounded-xl font-black text-center uppercase tracking-widest">Watch Reel 1</a>
+    <section class="max-w-6xl mx-auto px-6 py-10">
+        <h2 class="text-2xl font-bold mb-10 text-center border-b border-blue-500 pb-2">Featured Work</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass text-center">
+                <i class="fas fa-play text-4xl text-blue-500 mb-4"></i>
+                <a href="https://drive.google.com/file/d/1yS9-9R1YzZrpfK6yv3zLSmPFhPAXEMiK/view" target="_blank" class="block bg-blue-600 py-3 rounded-lg font-bold">Watch Reel 1</a>
             </div>
-            <div class="glass-card p-8 flex flex-col items-center">
-                <div class="w-full h-48 bg-blue-900/10 rounded-xl mb-6 flex items-center justify-center border border-blue-900/30">
-                    <i class="fas fa-play text-5xl text-blue-500"></i>
-                </div>
-                <a href="https://drive.google.com/file/d/14QSUjALRI3PIKI1ttR9jRYi5jzG79cFP/view" target="_blank" class="btn-primary w-full py-4 rounded-xl font-black text-center uppercase tracking-widest">Watch Reel 2</a>
+            <div class="glass text-center">
+                <i class="fas fa-play text-4xl text-blue-500 mb-4"></i>
+                <a href="https://drive.google.com/file/d/14QSUjALRI3PIKI1ttR9jRYi5jzG79cFP/view" target="_blank" class="block bg-blue-600 py-3 rounded-lg font-bold">Watch Reel 2</a>
             </div>
-            <div class="glass-card p-8 flex flex-col items-center">
-                <div class="w-full h-48 bg-blue-900/10 rounded-xl mb-6 flex items-center justify-center border border-blue-900/30">
-                    <i class="fas fa-play text-5xl text-blue-500"></i>
-                </div>
-                <a href="https://drive.google.com/file/d/1JPi6w8gIH7n2Wi6l7C3O5vfYSDPHHT2m/view" target="_blank" class="btn-primary w-full py-4 rounded-xl font-black text-center uppercase tracking-widest">Watch Reel 3</a>
+            <div class="glass text-center">
+                <i class="fas fa-play text-4xl text-blue-500 mb-4"></i>
+                <a href="https://drive.google.com/file/d/1JPi6w8gIH7n2Wi6l7C3O5vfYSDPHHT2m/view" target="_blank" class="block bg-blue-600 py-3 rounded-lg font-bold">Watch Reel 3</a>
             </div>
         </div>
     </section>
 
-    <section class="max-w-5xl mx-auto px-6 py-12">
-        <div class="glass-card p-12 border-2 border-emerald-500/50 bg-emerald-900/10 text-center">
-            <h2 class="text-3xl font-bold mb-6 text-emerald-400">🔥 Grab My Viral Editing Package</h2>
-            <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Ready to dominate TikTok, Reels, and Shorts? You can instantly purchase my professional video editing services through my <b>Upwork Project Catalog</b>. Click below to get started!
-            </p>
-            <a href="https://www.upwork.com/services/product/video-audio-i-will-edit-viral-short-form-videos-for-tiktok-reels-and-shorts-2016947897201589570?ref=project_share" 
-               target="_blank" 
-               class="bg-[#14a800] hover:bg-[#1db954] inline-block px-12 py-5 rounded-2xl font-black text-xl transition shadow-lg">
-                <i class="fas fa-shopping-cart mr-3"></i> BUY PROJECT CATALOG
-            </a>
+    <section class="max-w-4xl mx-auto px-6 py-10">
+        <div class="glass border-2 border-emerald-500 text-center bg-emerald-900/10">
+            <h2 class="text-2xl font-bold mb-4 text-emerald-400 text-center">Ready to Go Viral? 🚀</h2>
+            <p class="mb-8 text-gray-300">Buy my professional video editing package directly on Upwork Catalog!</p>
+            <a href="https://www.upwork.com/services/product/video-audio-i-will-edit-viral-short-form-videos-for-tiktok-reels-and-shorts-2016947897201589570?ref=project_share" target="_blank" class="bg-[#14a800] px-10 py-4 rounded-xl font-black text-lg inline-block hover:scale-105 transition">BUY PROJECT CATALOG</a>
         </div>
     </section>
 
-    <section class="max-w-4xl mx-auto px-6 py-20">
-        <div class="glass-card p-12">
-            <h2 class="text-3xl font-bold mb-10 text-center text-blue-400 underline underline-offset-4">Language Fluency</h2>
-            <div class="space-y-10">
-                <div>
-                    <div class="flex justify-between mb-3 text-xl font-bold"><span>English</span><span class="text-blue-400 italic">Fluent</span></div>
-                    <div class="w-full bg-gray-800 h-3 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[95%]"></div></div>
-                </div>
-                <div>
-                    <div class="flex justify-between mb-3 text-xl font-bold"><span>Amharic (አማርኛ)</span><span class="text-emerald-400 italic">Native or Bilingual</span></div>
-                    <div class="w-full bg-gray-800 h-3 rounded-full overflow-hidden"><div class="bg-emerald-500 h-full w-[100%]"></div></div>
-                </div>
-            </div>
+    <section class="max-w-4xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-8">
+        <div class="glass">
+            <h3 class="font-bold text-xl mb-6 text-blue-400">Language Fluency</h3>
+            <p class="flex justify-between mb-2">English <span>Fluent</span></p>
+            <div class="w-full bg-gray-800 h-2 rounded mb-4"><div class="bg-blue-500 h-2 w-[90%]"></div></div>
+            <p class="flex justify-between mb-2">Amharic <span>Native</span></p>
+            <div class="w-full bg-gray-800 h-2 rounded"><div class="bg-emerald-500 h-2 w-[100%]"></div></div>
+        </div>
+        <div class="glass">
+            <h3 class="font-bold text-xl mb-6 text-blue-400">Why Hire Me?</h3>
+            <ul class="text-sm space-y-3 text-gray-300">
+                <li><i class="fas fa-check text-blue-500 mr-2"></i> Fast Delivery (24-48 hrs)</li>
+                <li><i class="fas fa-check text-blue-500 mr-2"></i> Excellent Communication</li>
+                <li><i class="fas fa-check text-blue-500 mr-2"></i> High-Retention Edits</li>
+            </ul>
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-6 py-24 text-center">
-        <h2 class="text-4xl font-black mb-16">HIRE ME ON OFFICIAL PLATFORMS</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="glass-card p-10 border-b-8 border-[#14a800] flex flex-col items-center gap-4">
-                <i class="fab fa-upwork text-6xl text-[#14a800]"></i>
-                <span class="font-bold text-xl uppercase tracking-widest">Upwork Profile</span>
-            </a>
-            <a href="https://www.linkedin.com/in/temesgen-m-8192783a4" target="_blank" class="glass-card p-10 border-b-8 border-[#0077b5] flex flex-col items-center gap-4">
-                <i class="fab fa-linkedin text-6xl text-[#0077b5]"></i>
-                <span class="font-bold text-xl uppercase tracking-widest">LinkedIn</span>
-            </a>
-            <a href="mailto:temesgen.video@gmail.com" class="glass-card p-10 border-b-8 border-[#ea4335] flex flex-col items-center gap-4">
-                <i class="fas fa-envelope text-6xl text-[#ea4335]"></i>
-                <span class="font-bold text-xl uppercase tracking-widest">Gmail Me</span>
-            </a>
+    <footer class="py-16 text-center border-t border-gray-900">
+        <div class="flex justify-center gap-8 mb-8 text-4xl">
+            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="text-[#14a800]"><i class="fab fa-upwork"></i></a>
+            <a href="https://www.linkedin.com/in/temesgen-m-8192783a4" target="_blank" class="text-[#0077b5]"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:temesgen.video@gmail.com" class="text-[#ea4335]"><i class="fas fa-envelope"></i></a>
         </div>
-    </section>
-
-    <footer class="py-20 text-center text-gray-700 font-black tracking-[10px] text-xs uppercase">
-        © 2026 TOMI CREATIVE • ADDIS ABABA, ETHIOPIA
+        <p class="text-gray-600 text-xs">© 2026 TOMI CREATIVE | ADDIS ABABA, ETHIOPIA</p>
     </footer>
-
 </body>
 </html>
