@@ -19,8 +19,8 @@
         .hero-text { font-family: 'Syncopate', sans-serif; text-transform: uppercase; letter-spacing: -1px; }
         .glow-hover:hover { border-color: #3b82f6; box-shadow: 0 0 30px rgba(59, 130, 246, 0.2); transform: translateY(-3px); }
         
-        /* Optimized Video Wrapper for Mobile */
-        .video-wrapper { max-width: 270px; margin: 0 auto; border-radius: 20px; overflow: hidden; }
+        /* Video Container Optimized for Mobile Short-form (9:16) */
+        .video-wrapper { max-width: 270px; margin: 0 auto; border-radius: 20px; overflow: hidden; background: #000; }
         .video-container { position: relative; width: 100%; padding-bottom: 177.77%; height: 0; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
 
@@ -32,7 +32,7 @@
             display: flex; align-items: center; gap: 8px; text-transform: uppercase;
         }
 
-        .step-card { border-left: 2px solid #3b82f6; padding-left: 20px; position: relative; }
+        .step-card { border-left: 2px solid #3b82f6; padding-left: 20px; position: relative; margin-bottom: 20px; }
         .step-card::before { content: ''; position: absolute; left: -6px; top: 0; width: 10px; height: 10px; background: #3b82f6; border-radius: 50%; }
         
         .skill-tag { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); padding: 5px 12px; border-radius: 50px; font-size: 0.7rem; font-weight: 700; color: #60a5fa; text-transform: uppercase; }
@@ -49,13 +49,13 @@
 
     <header class="pt-20 pb-12 px-6 text-center">
         <div class="mb-8 inline-block">
-            <img src="me.jpg" class="w-32 h-32 rounded-full border-4 border-blue-600 mx-auto object-cover shadow-2xl" alt="Temesgen">
+            <img src="me.jpg" class="w-32 h-32 rounded-full border-4 border-blue-600 mx-auto object-cover" alt="Temesgen">
         </div>
         <h1 class="hero-text text-3xl md:text-5xl font-black mb-2">Temesgen M.</h1>
-        <p class="text-blue-500 font-bold tracking-[5px] uppercase text-xs mb-8 italic">Tomi Creative Studio</p>
+        <p class="text-blue-500 font-bold tracking-[5px] uppercase text-xs mb-8">Tomi Creative Studio</p>
         
-        <p class="max-w-xl mx-auto text-gray-400 text-sm mb-10 leading-relaxed">
-            Professional Video Editor with <span class="text-white font-bold">3+ years of mastery</span>. Delivering high-retention content that scales brands.
+        <p class="max-w-xl mx-auto text-gray-400 text-sm mb-10 leading-relaxed font-medium">
+            Elite Video Editor with <span class="text-white font-bold">3+ years of mastery</span>. Specializing in high-retention content that scales brands and creators.
         </p>
 
         <div class="flex justify-center gap-10 mb-12">
@@ -68,20 +68,11 @@
                 <span class="text-[9px] uppercase tracking-widest text-blue-400 font-bold">Job Success</span>
             </div>
         </div>
-
-        <div class="flex flex-wrap justify-center gap-4 mb-16">
-            <a href="https://wa.me/251984092330" target="_blank" class="glass px-6 py-3 flex items-center gap-2 glow-hover">
-                <i class="fab fa-whatsapp text-green-500"></i> <span class="text-[10px] font-black uppercase">Let's Chat</span>
-            </a>
-            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="glass px-6 py-3 flex items-center gap-2 glow-hover">
-                <i class="fab fa-upwork text-green-600"></i> <span class="text-[10px] font-black uppercase">Upwork Profile</span>
-            </a>
-        </div>
     </header>
 
     <section class="max-w-6xl mx-auto px-6 py-10">
-        <h2 class="text-center text-gray-500 uppercase tracking-[12px] text-[10px] font-black mb-12 italic">Main Portfolio</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <h2 class="text-center text-gray-500 uppercase tracking-[12px] text-[10px] font-black mb-12 italic">Selected Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
             <div class="video-wrapper glass glow-hover p-1"><div class="video-container"><iframe src="https://www.youtube.com/embed/k9pm5VF3Dz8" allowfullscreen></iframe></div></div>
             <div class="video-wrapper glass glow-hover p-1"><div class="video-container"><iframe src="https://www.youtube.com/embed/OorFjdO0yIg" allowfullscreen></iframe></div></div>
             <div class="video-wrapper glass glow-hover p-1"><div class="video-container"><iframe src="https://www.youtube.com/embed/ibnHtXapATE" allowfullscreen></iframe></div></div>
@@ -89,7 +80,7 @@
             <div class="video-wrapper glass glow-hover p-1"><div class="video-container"><iframe src="https://www.youtube.com/embed/gOlOsQtXieU" allowfullscreen></iframe></div></div>
         </div>
 
-        <h2 class="text-center text-emerald-500 uppercase tracking-[12px] text-[10px] font-black mb-12 italic">Transformations</h2>
+        <h2 class="text-center text-emerald-500 uppercase tracking-[12px] text-[10px] font-black mb-12 italic">Visual Transformation (B&A)</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="video-wrapper glass glow-hover border-emerald-500/20 p-1"><div class="video-container"><iframe src="https://www.youtube.com/embed/4nOw8PU21DQ" allowfullscreen></iframe></div></div>
             <div class="video-wrapper glass glow-hover border-emerald-500/20 p-1"><div class="video-container"><iframe src="https://www.youtube.com/embed/5fC3SLjaiYI" allowfullscreen></iframe></div></div>
@@ -98,36 +89,36 @@
     </section>
 
     <section class="max-w-4xl mx-auto px-6 py-20">
-        <h2 class="text-center text-gray-500 uppercase tracking-[10px] text-[10px] font-black mb-16 italic">Work Process</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div class="step-card"><h4 class="font-black text-xs uppercase text-blue-500 mb-2">01. Strategy</h4><p class="text-[11px] text-gray-400">Understanding your niche and target audience hooks.</p></div>
-            <div class="step-card"><h4 class="font-black text-xs uppercase text-blue-500 mb-2">02. Editing</h4><p class="text-[11px] text-gray-400">Applying advanced cuts, motion graphics, and sound design.</p></div>
-            <div class="step-card"><h4 class="font-black text-xs uppercase text-blue-500 mb-2">03. Refinement</h4><p class="text-[11px] text-gray-400">Unlimited revisions until the video is viral-ready.</p></div>
-            <div class="step-card"><h4 class="font-black text-xs uppercase text-blue-500 mb-2">04. Delivery</h4><p class="text-[11px] text-gray-400">High-quality export ready for all social platforms.</p></div>
+        <h2 class="text-center text-gray-500 uppercase tracking-[10px] text-[10px] font-black mb-16 italic">The Workflow</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="step-card"><h4 class="font-black text-xs uppercase text-blue-500 mb-2">01. Hook & Strategy</h4><p class="text-[11px] text-gray-400">Defining the visual hook to maximize audience retention from the first second.</p></div>
+            <div class="step-card"><h4 class="font-black text-xs uppercase text-blue-500 mb-2">02. Creative Editing</h4><p class="text-[11px] text-gray-400">Advanced storytelling using motion graphics, sound design, and pacing.</p></div>
+            <div class="step-card"><h4 class="font-black text-xs uppercase text-blue-500 mb-2">03. Feedback Loop</h4><p class="text-[11px] text-gray-400">Collaboration and refinement to ensure the result is exactly what you envisioned.</p></div>
+            <div class="step-card"><h4 class="font-black text-xs uppercase text-blue-500 mb-2">04. Final Mastery</h4><p class="text-[11px] text-gray-400">High-resolution delivery optimized for TikTok, Reels, and YouTube Shorts.</p></div>
         </div>
     </section>
 
     <section class="max-w-5xl mx-auto px-6 py-10">
-        <div class="glass p-12 text-center border-2 border-emerald-500/20 bg-emerald-500/5 glow-hover">
-            <h3 class="text-2xl font-black mb-6 text-emerald-500 uppercase italic">Scale Faster on Upwork</h3>
-            <p class="text-white font-bold mb-4 uppercase text-sm">One-Click Professional Packages</p>
+        <div class="glass p-10 text-center border-2 border-emerald-500/20 bg-emerald-500/5 glow-hover">
+            <h3 class="text-2xl font-black mb-6 text-emerald-500 uppercase italic">Start Your Project Instantly</h3>
+            <p class="text-white font-bold mb-4 uppercase text-sm">Professional Packages via Upwork</p>
             <p class="text-gray-400 mb-10 max-w-2xl mx-auto text-xs leading-relaxed">
-                Save time and skip the long interview process! Purchase a pre-defined package from my **Upwork Project Catalog** for high-quality, fast-turnaround video solutions.
+                Skip the long onboarding process! Visit my **Upwork Project Catalog** to choose from pre-defined, high-quality video editing packages tailored for fast delivery.
             </p>
             <a href="https://www.upwork.com/services/product/video-audio-i-will-edit-viral-short-form-videos-for-tiktok-reels-and-shorts-2016947897201589570" target="_blank" class="bg-emerald-600 text-white px-10 py-4 rounded-xl font-black text-xs hover:scale-105 transition shadow-2xl inline-block uppercase tracking-widest">
-                <i class="fas fa-shopping-cart mr-2"></i> View Project Packages
+                <i class="fas fa-bolt mr-2"></i> View Catalog & Pricing
             </a>
         </div>
     </section>
 
-    <section class="max-w-4xl mx-auto px-6 py-20">
+    <section class="max-w-4xl mx-auto px-6 py-16">
         <div class="glass p-8 text-center">
-            <h3 class="text-xs font-black mb-8 uppercase text-blue-500 italic tracking-[5px]">Expertise & Tools</h3>
-            <div class="flex flex-wrap justify-center gap-3 mb-8">
+            <h3 class="text-xs font-black mb-8 uppercase text-blue-500 italic tracking-[5px]">Expertise</h3>
+            <div class="flex flex-wrap justify-center gap-3">
                 <span class="skill-tag">Retention Design</span>
-                <span class="skill-tag">Motion Graphics</span>
                 <span class="skill-tag">Viral Hooks</span>
                 <span class="skill-tag">Sound Design</span>
+                <span class="skill-tag">Motion Graphics</span>
                 <span class="skill-tag">Premiere Pro</span>
                 <span class="skill-tag">After Effects</span>
                 <span class="skill-tag">CapCut Pro</span>
@@ -136,48 +127,55 @@
     </section>
 
     <section class="max-w-6xl mx-auto px-6 py-10">
-        <h2 class="text-center text-gray-500 uppercase tracking-[10px] text-[10px] font-black mb-12 italic">Client Reviews</h2>
+        <h2 class="text-center text-gray-500 uppercase tracking-[10px] text-[10px] font-black mb-12 italic">Client Feedback</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="glass p-6 text-center border-b border-blue-500/20">
-                <p class="text-gray-400 italic text-xs mb-4">"Exceptional quality and fast delivery. Understands the vision perfectly."</p>
+            <div class="glass p-6 text-center">
+                <p class="text-gray-400 italic text-xs mb-4">"Tomi is an exceptional editor. Delivered high-quality work on time."</p>
                 <p class="font-black text-blue-500 text-[9px] uppercase">Alice Brin • Upwork</p>
             </div>
-            <div class="glass p-6 text-center border-b border-blue-500/20">
-                <p class="text-gray-400 italic text-xs mb-4">"Best short-form editor I've worked with. Highly recommended!"</p>
+            <div class="glass p-6 text-center">
+                <p class="text-gray-400 italic text-xs mb-4">"He understands viral trends and hooks perfectly. Engagement went up!"</p>
                 <p class="font-black text-blue-500 text-[9px] uppercase">Jason D. • Influencer</p>
             </div>
-            <div class="glass p-6 text-center border-b border-blue-500/20">
-                <p class="text-gray-400 italic text-xs mb-4">"He knows exactly how to hook an audience and keep them watching."</p>
-                <p class="font-black text-blue-500 text-[9px] uppercase">Mark K. • Creator</p>
+            <div class="glass p-6 text-center">
+                <p class="text-gray-400 italic text-xs mb-4">"Fast communication and incredible visual storytelling skills."</p>
+                <p class="font-black text-blue-500 text-[9px] uppercase">Mark K. • Content Lead</p>
             </div>
         </div>
     </section>
 
     <section class="max-w-4xl mx-auto px-6 py-20">
-        <h2 class="text-center text-gray-500 uppercase tracking-[10px] text-[10px] font-black mb-12 italic">FAQs</h2>
+        <h2 class="text-center text-gray-500 uppercase tracking-[10px] text-[10px] font-black mb-12 italic">Common Questions</h2>
         <div class="space-y-4">
-            <details class="glass p-5 group">
-                <summary class="flex justify-between items-center font-bold text-[10px] uppercase tracking-widest cursor-pointer">Turnaround Time? <i class="fas fa-chevron-down text-blue-500"></i></summary>
-                <p class="mt-4 text-gray-400 text-xs">Usually 24 to 48 hours depending on the project scope.</p>
+            <details class="glass p-5 group cursor-pointer">
+                <summary class="flex justify-between items-center font-bold text-[10px] uppercase tracking-widest">Turnaround Time? <i class="fas fa-chevron-down text-blue-500 transition group-open:rotate-180"></i></summary>
+                <p class="mt-4 text-gray-400 text-xs">Usually 24 to 48 hours depending on the project complexity.</p>
             </details>
-            <details class="glass p-5 group">
-                <summary class="flex justify-between items-center font-bold text-[10px] uppercase tracking-widest cursor-pointer">Revisions Policy? <i class="fas fa-chevron-down text-blue-500"></i></summary>
-                <p class="mt-4 text-gray-400 text-xs">I provide unlimited revisions to ensure your content is perfect.</p>
+            <details class="glass p-5 group cursor-pointer">
+                <summary class="flex justify-between items-center font-bold text-[10px] uppercase tracking-widest">Revision Policy? <i class="fas fa-chevron-down text-blue-500 transition group-open:rotate-180"></i></summary>
+                <p class="mt-4 text-gray-400 text-xs">Unlimited revisions are included to ensure you are 100% satisfied with the final edit.</p>
             </details>
-            <details class="glass p-5 group">
-                <summary class="flex justify-between items-center font-bold text-[10px] uppercase tracking-widest cursor-pointer">Bulk Discounts? <i class="fas fa-chevron-down text-blue-500"></i></summary>
-                <p class="mt-4 text-gray-400 text-xs">Yes, I offer special rates for long-term partners and bulk monthly orders.</p>
+            <details class="glass p-5 group cursor-pointer">
+                <summary class="flex justify-between items-center font-bold text-[10px] uppercase tracking-widest">Software Preference? <i class="fas fa-chevron-down text-blue-500 transition group-open:rotate-180"></i></summary>
+                <p class="mt-4 text-gray-400 text-xs">I primarily use Adobe Premiere Pro and After Effects for advanced edits, and CapCut Pro for specific trendy effects.</p>
             </details>
         </div>
     </section>
 
     <section class="py-20 text-center px-6">
-        <h2 class="hero-text text-2xl mb-10">Let's Create <span class="text-blue-500">Viral</span> Content</h2>
-        <a href="mailto:mengesha053@gmail.com" class="glass px-10 py-5 font-black text-xs uppercase tracking-[3px] hover:bg-blue-600 transition inline-block glow-hover border-blue-500">Get In Touch Now</a>
+        <h2 class="hero-text text-2xl mb-10 leading-tight">Ready to Take Your <br><span class="text-blue-500">Content</span> to the Next Level?</h2>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="https://wa.me/251984092330" target="_blank" class="glass px-8 py-4 font-black text-xs uppercase tracking-widest hover:bg-green-600 transition flex items-center gap-2">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="mailto:mengesha053@gmail.com" class="glass px-8 py-4 font-black text-xs uppercase tracking-widest hover:bg-blue-600 transition flex items-center gap-2">
+                <i class="fas fa-envelope"></i> Send an Email
+            </a>
+        </div>
     </section>
 
     <footer class="text-center py-12 border-t border-white/5 opacity-50">
-        <p class="text-[8px] font-black tracking-[5px] uppercase">© 2026 Tomi Creative • Temesgen M. • Premium Video Solutions</p>
+        <p class="text-[8px] font-black tracking-[5px] uppercase">© 2026 Tomi Creative • Temesgen M. • Elite Video Solutions</p>
     </footer>
 </body>
 </html>
