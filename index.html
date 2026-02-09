@@ -1,219 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temesgen M. | Tomi Creative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { background: #020202; color: #fff; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .studio-bg {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.92)), 
+                        url('https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover; background-position: center; z-index: -1;
+        }
+        .glass { background: rgba(15, 15, 15, 0.85); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(20px); border-radius: 28px; transition: 0.4s; overflow: hidden; }
+        .hero-text { font-family: 'Syncopate', sans-serif; text-transform: uppercase; letter-spacing: -1px; }
+        .glow-hover:hover { border-color: #3b82f6; box-shadow: 0 0 40px rgba(59, 130, 246, 0.25); transform: translateY(-5px); }
+        .software-card { background: #0c0c0c; border: 1px solid #222; padding: 20px; border-radius: 20px; text-align: center; }
+        .skill-tag { background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); padding: 6px 16px; border-radius: 50px; font-size: 0.75rem; font-weight: 700; color: #60a5fa; text-transform: uppercase; }
+        
+        /* Video Container - Large size as requested */
+        .video-container { position: relative; width: 100%; padding-bottom: 177.77%; height: 0; background: #000; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        
+        .floating-hire {
+            position: fixed; bottom: 30px; right: 30px; z-index: 1000;
+            background: #14a800; color: white; padding: 15px 25px;
+            border-radius: 50px; font-weight: 900; font-size: 14px;
+            box-shadow: 0 10px 30px rgba(20, 168, 0, 0.4);
+            display: flex; align-items: center; gap: 10px; text-transform: uppercase;
+        }
 
-<title>Tomi Creative | Video Editor</title>
-
-<meta name="description" content="Professional short-form video editor helping creators grow with viral edits.">
-
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-<style>
-body{
-background:#020202;
-color:white;
-font-family:sans-serif;
-}
-
-.glass{
-background:rgba(15,15,15,.85);
-border:1px solid rgba(255,255,255,.1);
-backdrop-filter:blur(20px);
-border-radius:22px;
-}
-
-.video{
-position:relative;
-padding-bottom:56.25%;
-height:0;
-}
-.video iframe{
-position:absolute;
-width:100%;
-height:100%;
-}
-
-.cta{
-background:#14a800;
-padding:14px 26px;
-border-radius:40px;
-font-weight:bold;
-}
-
-.skill{
-background:rgba(59,130,246,.15);
-padding:6px 16px;
-border-radius:40px;
-font-size:12px;
-}
-</style>
+        details > summary { list-style: none; cursor: pointer; }
+    </style>
 </head>
+<body class="overflow-x-hidden">
+    <div class="studio-bg"></div>
 
-<body>
+    <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="floating-hire">
+        <i class="fab fa-upwork text-xl"></i> Hire Me
+    </a>
 
-<!-- FLOATING HIRE -->
-<a href="https://www.upwork.com/freelancers/~0130453a58feda9741"
-target="_blank"
-class="cta fixed bottom-6 right-6 z-50">
-Hire Me
-</a>
+    <header class="pt-24 pb-16 px-6 text-center">
+        <div class="mb-10 relative inline-block">
+            <img src="me.jpg" class="w-40 h-40 rounded-full border-4 border-blue-500 mx-auto object-cover shadow-2xl" alt="Temesgen">
+            <div class="absolute -bottom-2 -right-2 bg-blue-600 text-white text-[9px] font-black px-4 py-2 rounded-full uppercase">Available Now</div>
+        </div>
+        <h1 class="hero-text text-4xl md:text-6xl font-bold mb-4 leading-tight">
+            Temesgen M. <br> <span class="text-blue-500">Tomi Creative</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-gray-400 text-sm md:text-base mb-8 leading-relaxed font-medium">
+            Elite Video Editor with <span class="text-blue-400 font-black tracking-widest uppercase">3+ years of professional mastery</span>. Helping creators dominate the digital landscape with high-impact visuals.
+        </p>
 
-<!-- HERO -->
-<section class="text-center px-6 py-16 max-w-4xl mx-auto">
+        <div class="mb-12">
+            <span class="text-4xl font-black text-white">200+</span>
+            <span class="block text-[10px] uppercase tracking-[5px] text-blue-500 font-bold">Videos Delivered</span>
+        </div>
 
-<img src="me.jpg"
-class="w-36 h-36 rounded-full mx-auto border-4 border-blue-500 mb-6 object-cover">
+        <div class="flex flex-wrap justify-center gap-6 mb-16 px-4">
+            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="glass p-5 flex items-center gap-3 glow-hover">
+                <i class="fab fa-upwork text-[#14a800] text-3xl"></i>
+                <div class="text-left"><span class="block text-[10px] uppercase text-gray-500 font-bold">Platform</span><span class="font-black text-sm uppercase">Upwork</span></div>
+            </a>
+            <a href="https://wa.me/251984092330" target="_blank" class="glass p-5 flex items-center gap-3 glow-hover">
+                <i class="fab fa-whatsapp text-[#25D366] text-3xl"></i>
+                <div class="text-left"><span class="block text-[10px] uppercase text-gray-500 font-bold">Direct Line</span><span class="font-black text-sm uppercase">WhatsApp</span></div>
+            </a>
+            <a href="https://www.linkedin.com/in/temesgen-m-8192783a4" target="_blank" class="glass p-5 flex items-center gap-3 glow-hover">
+                <i class="fab fa-linkedin text-[#0077b5] text-3xl"></i>
+                <div class="text-left"><span class="block text-[10px] uppercase text-gray-500 font-bold">Connect</span><span class="font-black text-sm uppercase">LinkedIn</span></div>
+            </a>
+        </div>
+    </header>
 
-<h1 class="text-4xl md:text-5xl font-black mb-4">
-Helping Creators Grow With <span class="text-blue-500">Viral Edits</span>
-</h1>
+    <section class="max-w-6xl mx-auto px-6 py-12">
+        <h2 class="text-center text-gray-500 uppercase tracking-[15px] text-[11px] font-black mb-16 italic">Portfolio Showcase</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+            <div class="glass glow-hover"><div class="video-container"><iframe src="https://www.youtube.com/embed/k9pm5VF3Dz8" allowfullscreen></iframe></div></div>
+            <div class="glass glow-hover"><div class="video-container"><iframe src="https://www.youtube.com/embed/OorFjdO0yIg" allowfullscreen></iframe></div></div>
+            <div class="glass glow-hover"><div class="video-container"><iframe src="https://www.youtube.com/embed/ibnHtXapATE" allowfullscreen></iframe></div></div>
+            <div class="glass glow-hover"><div class="video-container"><iframe src="https://www.youtube.com/embed/TmPzUJvbiDo" allowfullscreen></iframe></div></div>
+            <div class="glass glow-hover"><div class="video-container"><iframe src="https://www.youtube.com/embed/gOlOsQtXieU" allowfullscreen></iframe></div></div>
+        </div>
 
-<p class="text-gray-400 mb-8">
-200+ videos delivered • 3+ years experience
-</p>
+        <h2 class="text-center text-emerald-500 uppercase tracking-[15px] text-[11px] font-black mb-16 italic">Before & After</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass glow-hover border-emerald-500/20"><div class="video-container"><iframe src="https://www.youtube.com/embed/4nOw8PU21DQ" allowfullscreen></iframe></div></div>
+            <div class="glass glow-hover border-emerald-500/20"><div class="video-container"><iframe src="https://www.youtube.com/embed/5fC3SLjaiYI" allowfullscreen></iframe></div></div>
+            <div class="glass glow-hover border-emerald-500/20"><div class="video-container"><iframe src="https://www.youtube.com/embed/2ViUN_6fP_I" allowfullscreen></iframe></div></div>
+        </div>
+    </section>
 
-<!-- YOUR LINKS -->
-<div class="flex flex-wrap justify-center gap-6">
+    <section class="max-w-4xl mx-auto px-6 py-20">
+        <h2 class="text-center text-gray-500 uppercase tracking-[10px] text-[10px] font-black mb-16 italic">How I Deliver Results</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="glass p-8 border-l-4 border-blue-500">
+                <h4 class="font-black text-sm uppercase text-blue-500 mb-2">01. Strategy</h4>
+                <p class="text-xs text-gray-400 leading-relaxed">Defining the hooks and visual style tailored for your niche.</p>
+            </div>
+            <div class="glass p-8 border-l-4 border-blue-500">
+                <h4 class="font-black text-sm uppercase text-blue-500 mb-2">02. Creative Editing</h4>
+                <p class="text-xs text-gray-400 leading-relaxed">High-retention storytelling with motion graphics and sound design.</p>
+            </div>
+        </div>
+    </section>
 
-<a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" class="glass p-4 flex gap-3 items-center">
-<i class="fab fa-upwork text-green-500 text-2xl"></i> Upwork
-</a>
+    <section class="max-w-5xl mx-auto px-6 py-10">
+        <div class="glass p-12 text-center border-2 border-emerald-500/20 bg-emerald-500/5 glow-hover">
+            <h3 class="text-2xl font-black mb-6 text-emerald-500 uppercase italic">Ready to Scale?</h3>
+            <p class="text-white font-bold mb-4 uppercase text-sm">Purchase a package on Upwork</p>
+            <p class="text-gray-400 mb-10 max-w-2xl mx-auto text-xs leading-relaxed">
+                Save time! Access my exclusive **Upwork Project Catalog** for high-quality, fast-turnaround video solutions.
+            </p>
+            <a href="https://www.upwork.com/services/product/video-audio-i-will-edit-viral-short-form-videos-for-tiktok-reels-and-shorts-2016947897201589570" target="_blank" class="bg-emerald-600 text-white px-10 py-4 rounded-xl font-black text-xs hover:scale-105 transition shadow-2xl inline-block uppercase tracking-widest">
+                <i class="fas fa-shopping-cart mr-2"></i> GET STARTED NOW
+            </a>
+        </div>
+    </section>
 
-<a href="https://wa.me/251984092330" target="_blank" class="glass p-4 flex gap-3 items-center">
-<i class="fab fa-whatsapp text-green-400 text-2xl"></i> WhatsApp
-</a>
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-center text-gray-500 uppercase tracking-[15px] text-[11px] font-black mb-16 italic">Client Reviews</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass p-8 text-center border-b-2 border-yellow-500/20">
+                <div class="flex justify-center gap-1 text-yellow-500 mb-4 text-xs">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-400 italic text-xs mb-6 leading-relaxed">"Tomi is an exceptional editor. Delivered high-quality work on time and understood the vision perfectly."</p>
+                <p class="font-black text-blue-500 text-[10px] uppercase">Alice Brin • Upwork Client</p>
+            </div>
+            <div class="glass p-8 text-center border-b-2 border-yellow-500/20">
+                <div class="flex justify-center gap-1 text-yellow-500 mb-4 text-xs">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-400 italic text-xs mb-6">"Engagement spiked significantly since we started working together. Master of hooks!"</p>
+                <p class="font-black text-blue-500 text-[10px] uppercase">Jason D. • Influencer</p>
+            </div>
+            <div class="glass p-8 text-center border-b-2 border-yellow-500/20">
+                <div class="flex justify-center gap-1 text-yellow-500 mb-4 text-xs">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-400 italic text-xs mb-6">"Fast communication and incredible visual storytelling skills."</p>
+                <p class="font-black text-blue-500 text-[10px] uppercase">Mark K. • Creator</p>
+            </div>
+        </div>
+    </section>
 
-<a href="https://www.linkedin.com/in/temesgen-m-8192783a4" target="_blank" class="glass p-4 flex gap-3 items-center">
-<i class="fab fa-linkedin text-blue-400 text-2xl"></i> LinkedIn
-</a>
+    <section class="max-w-6xl mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="glass p-10">
+                <h3 class="text-xl font-black mb-10 uppercase tracking-widest text-blue-500 italic">Software Stack</h3>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="software-card"><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-10 mx-auto mb-3"><p class="text-[10px] font-bold">PREMIERE</p></div>
+                    <div class="software-card"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-10 mx-auto mb-3"><p class="text-[10px] font-bold">AFTER EFFECTS</p></div>
+                    <div class="software-card border-blue-500/30"><i class="fas fa-video text-white text-3xl mb-3"></i><p class="text-[10px] font-bold uppercase">CAPCUT PRO</p></div>
+                </div>
+            </div>
+            <div class="glass p-10">
+                <h3 class="text-xl font-black mb-10 uppercase tracking-widest text-blue-500 italic">Expertise</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-tag">Retention Design</span>
+                    <span class="skill-tag">Viral Storytelling</span>
+                    <span class="skill-tag">Motion Graphics</span>
+                    <span class="skill-tag">Sound Design</span>
+                    <span class="skill-tag">Dynamic Captions</span>
+                    <span class="skill-tag">Color Grading</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</div>
-</section>
-
-<!-- PROJECT CATALOG (SEPARATE HIGHLIGHT) -->
-<section class="max-w-4xl mx-auto px-6 mb-20">
-
-<div class="glass p-10 text-center border-2 border-green-500/30">
-
-<h2 class="text-2xl font-black text-green-500 mb-4">
-Upwork Project Catalog
-</h2>
-
-<p class="text-gray-400 mb-6">
-Buy ready-made editing packages with fast turnaround.
-</p>
-
-<a href="https://www.upwork.com/services/product/video-audio-i-will-edit-viral-short-form-videos-for-tiktok-reels-and-shorts-2016947897201589570"
-target="_blank"
-class="cta inline-block">
-View Catalog
-</a>
-
-</div>
-</section>
-
-<!-- SHOWREEL -->
-<section class="max-w-5xl mx-auto px-6 mb-20">
-
-<h2 class="text-center text-gray-400 mb-6">Showreel</h2>
-
-<div class="glass p-4 video">
-<iframe loading="lazy" src="https://www.youtube.com/embed/k9pm5VF3Dz8" allowfullscreen></iframe>
-</div>
-
-</section>
-
-<!-- PORTFOLIO -->
-<section class="max-w-6xl mx-auto px-6 mb-20">
-
-<h2 class="text-center text-gray-400 mb-10">Portfolio</h2>
-
-<div class="grid md:grid-cols-3 gap-6">
-
-<div class="glass video"><iframe loading="lazy" src="https://www.youtube.com/embed/OorFjdO0yIg"></iframe></div>
-<div class="glass video"><iframe loading="lazy" src="https://www.youtube.com/embed/ibnHtXapATE"></iframe></div>
-<div class="glass video"><iframe loading="lazy" src="https://www.youtube.com/embed/TmPzUJvbiDo"></iframe></div>
-
-</div>
-</section>
-
-<!-- CLIENT REVIEWS -->
-<section class="max-w-6xl mx-auto px-6 mb-20">
-
-<h2 class="text-center text-gray-400 mb-10">Client Reviews</h2>
-
-<div class="grid md:grid-cols-3 gap-6 text-center">
-
-<div class="glass p-6">
-★★★★★
-<p class="text-gray-400 italic mt-4">
-"Tomi is an exceptional editor. High quality and on time."
-</p>
-</div>
-
-<div class="glass p-6">
-★★★★★
-<p class="text-gray-400 italic mt-4">
-"Engagement increased after his edits."
-</p>
-</div>
-
-<div class="glass p-6">
-★★★★★
-<p class="text-gray-400 italic mt-4">
-"Great communication and storytelling."
-</p>
-</div>
-
-</div>
-</section>
-
-<!-- SOFTWARE -->
-<section class="max-w-5xl mx-auto px-6 mb-20">
-
-<h2 class="text-center text-gray-400 mb-10">Software</h2>
-
-<div class="grid grid-cols-3 gap-6 text-center">
-
-<div class="glass p-6">
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-12 mx-auto mb-3">
-Premiere Pro
-</div>
-
-<div class="glass p-6">
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-12 mx-auto mb-3">
-After Effects
-</div>
-
-<div class="glass p-6">
-<i class="fas fa-video text-3xl mb-3"></i>
-CapCut Pro
-</div>
-
-</div>
-</section>
-
-<!-- SKILLS -->
-<section class="max-w-4xl mx-auto px-6 mb-20 text-center">
-
-<h2 class="text-gray-400 mb-6">Skills</h2>
-
-<div class="flex flex-wrap justify-center gap-4">
-<span class="skill">Retention Editing</span>
-<span class="skill">Motion Graphics</span>
-<span class="skill">Sound Design</span>
-<span class="skill">Dynamic Captions</span>
-<span class="skill">Color Grading</span>
-</div>
-
-</section>
-
-<footer class="text-center py-10 text-gray-500">
-© 2026 Tomi Creative
-</footer>
-
+    <footer class="text-center py-20 border-t border-white/5 opacity-80">
+        <p class="hero-text text-[10px] tracking-[15px] text-gray-500 mb-8 font-bold uppercase">Tomi Creative Studio</p>
+        <div class="flex justify-center gap-10 text-2xl mb-12">
+            <a href="https://wa.me/251984092330" target="_blank" class="hover:text-green-500 transition"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:mengesha053@gmail.com" class="hover:text-blue-500 transition"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="text-[9px] font-black tracking-[5px] opacity-40 uppercase">© 2026 PREMIUM VIDEO SOLUTIONS</p>
+    </footer>
 </body>
 </html>
