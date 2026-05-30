@@ -12,13 +12,14 @@
         body { background: #020202; color: #fff; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .studio-bg {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.92)), 
+            background: linear-gradient(rgba(0,0,0,0.94), rgba(0,0,0,0.94)), 
                         url('https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2000&auto=format&fit=crop');
             background-size: cover; background-position: center; z-index: -1;
         }
-        .glass { background: rgba(15, 15, 15, 0.85); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(20px); border-radius: 28px; transition: 0.4s; overflow: hidden; }
+        /* Anti-lag optimization: removed heavy blur filter for smooth scrolling */
+        .glass { background: #0f0f0f; border: 1px solid rgba(255,255,255,0.08); border-radius: 28px; transition: 0.3s ease; overflow: hidden; }
         .hero-text { font-family: 'Syncopate', sans-serif; text-transform: uppercase; letter-spacing: -1px; }
-        .glow-hover:hover { border-color: #3b82f6; box-shadow: 0 0 40px rgba(59, 130, 246, 0.25); transform: translateY(-5px); }
+        .glow-hover:hover { border-color: #3b82f6; box-shadow: 0 0 30px rgba(59, 130, 246, 0.2); transform: translateY(-4px); }
         
         /* Optimized Medium-Sized Video Container */
         .video-container { position: relative; width: 100%; padding-bottom: 177.77%; height: 0; background: #000; border-radius: 20px; overflow: hidden; }
@@ -80,18 +81,13 @@
             </div>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-4 mb-16 px-4">
-            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" rel="noopener noreferrer" class="glass p-4 flex items-center gap-3 glow-hover no-underline">
-                <i class="fab fa-upwork text-[#14a800] text-2xl"></i>
-                <div class="text-left leading-none"><span class="block text-[8px] uppercase text-gray-500 font-bold mb-1">Platform</span><span class="font-black text-xs uppercase">Upwork</span></div>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" class="glass p-4 flex items-center gap-3 glow-hover no-underline">
-                <i class="fab fa-instagram text-pink-500 text-2xl"></i>
-                <div class="text-left leading-none"><span class="block text-[8px] uppercase text-gray-500 font-bold mb-1">Social</span><span class="font-black text-xs uppercase">Instagram</span></div>
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" class="glass p-4 flex items-center gap-3 glow-hover no-underline">
-                <i class="fab fa-tiktok text-white text-2xl"></i>
-                <div class="text-left leading-none"><span class="block text-[8px] uppercase text-gray-500 font-bold mb-1">Social</span><span class="font-black text-xs uppercase">TikTok</span></div>
+        <div class="flex justify-center mb-16 px-4">
+            <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" rel="noopener noreferrer" class="glass p-4 flex items-center gap-4 glow-hover no-underline px-8">
+                <i class="fab fa-upwork text-[#14a800] text-3xl"></i>
+                <div class="text-left leading-none">
+                    <span class="block text-[9px] uppercase text-gray-500 font-bold mb-1">Official Profile</span>
+                    <span class="font-black text-sm uppercase tracking-wider text-white">Hire Me on Upwork</span>
+                </div>
             </a>
         </div>
     </header>
@@ -120,7 +116,7 @@
             <div class="glass p-1.5 glow-hover md:col-span-1 col-span-2 max-w-[50%] mx-auto md:max-w-none w-full"><div class="video-container"><iframe src="https://www.youtube.com/embed/TmPzUJvbiDo" loading="lazy" allowfullscreen></iframe></div></div>
         </div>
 
-        <h2 class="text-center text-yellow-500 uppercase tracking-[12px] textxl md:text-2xl font-black mb-12 italic bg-yellow-500/5 py-4 rounded-full border border-yellow-500/10">
+        <h2 class="text-center text-yellow-500 uppercase tracking-[12px] text-xl md:text-2xl font-black mb-12 italic bg-yellow-500/5 py-4 rounded-full border border-yellow-500/10">
             ✦ Visual Magic (Before & After) ✦
         </h2>
         <div class="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-6 max-w-2xl mx-auto mb-24">
@@ -233,7 +229,6 @@
                 <p class="text-gray-400 mb-10 text-[14px] leading-relaxed max-w-xl mx-auto italic font-medium">
                     "Average content gets scrolled past. I combine rapid-fire pacing, emotional hooks, and elite sound design to keep your audience glued to the screen. Choose my tailored package on Upwork and get your viral-ready video in <span class="text-white font-black underline">less than 48 hours.</span>"
                 </p>
-                <p class="text-sm font-bold text-gray-400 mb-6 uppercase">Don't settle for boring content.</p>
                 <a href="https://www.upwork.com/services/product/video-audio-i-will-edit-viral-short-form-videos-for-tiktok-reels-and-shorts-2016947897201589570" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-12 py-5 rounded-full font-black text-sm hover:bg-blue-700 transition shadow-[0_0_30px_rgba(59,130,246,0.5)] inline-block uppercase tracking-[3px] no-underline">
                     Start Your Project Now <i class="fas fa-arrow-right ml-2"></i>
                 </a>
