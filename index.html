@@ -54,7 +54,7 @@
         .nav-link:hover { color: #ffffff; }
         .nav-link:hover::after { width: 100%; }
 
-        /* Glowing Electric Blue Portrait Circle (From V2 Hero Layout) */
+        /* Glowing Electric Blue Portrait Circle */
         .portrait-ring {
             position: relative;
             width: 240px;
@@ -106,7 +106,7 @@
             box-shadow: 0 8px 28px rgba(59, 130, 246, 0.6);
         }
 
-        /* Floating Green Upwork Hire Me Button (From V1) */
+        /* Floating Green Upwork Hire Me Button */
         .floating-hire {
             position: fixed;
             bottom: 22px;
@@ -132,27 +132,6 @@
             box-shadow: 0 10px 32px rgba(22, 163, 74, 0.75);
         }
 
-        .social-circle {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 1.5px solid var(--accent-light);
-            color: var(--accent-light);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-
-        .social-circle:hover {
-            background-color: var(--accent);
-            color: #ffffff;
-            box-shadow: 0 0 18px var(--accent-glow);
-            transform: translateY(-3px);
-        }
-
         .dark-card {
             background: var(--card-bg);
             border: 1px solid rgba(255, 255, 255, 0.08);
@@ -164,6 +143,32 @@
             border-color: rgba(59, 130, 246, 0.45);
             box-shadow: 0 10px 30px rgba(37, 99, 235, 0.12);
             transform: translateY(-3px);
+        }
+
+        /* Client Logo Pill Card (Designed cleanly for white-background logos on dark UI) */
+        .logo-badge {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 76px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(59, 130, 246, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .logo-badge:hover {
+            transform: translateY(-3px);
+            border-color: #3b82f6;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+        }
+
+        .logo-badge img {
+            max-height: 52px;
+            max-width: 170px;
+            object-fit: contain;
         }
 
         .video-container {
@@ -218,7 +223,7 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between">
 
-    <!-- STICKY TOP NAVIGATION BAR (Smooth Single-Page Jump Links) -->
+    <!-- STICKY TOP NAVIGATION BAR -->
     <header class="w-full sticky top-0 z-50 bg-[#050507]/90 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-5 md:px-12 h-16 md:h-20 flex items-center justify-between">
             <a href="#home" class="cursor-pointer text-xl md:text-2xl font-extrabold tracking-tight select-none no-underline">
@@ -259,8 +264,8 @@
     <!-- MAIN SINGLE-PAGE SCROLL CONTENT -->
     <main class="flex-grow">
 
-        <!-- ==================== 1. HERO SECTION (V2 Layout + V1 Trust Stats) ==================== -->
-        <section id="home" class="w-full max-w-6xl mx-auto px-6 md:px-12 pt-10 pb-14 md:pt-16 md:pb-20">
+        <!-- ==================== 1. HERO SECTION ==================== -->
+        <section id="home" class="w-full max-w-6xl mx-auto px-6 md:px-12 pt-10 pb-10 md:pt-16 md:pb-14">
             <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-14">
                 
                 <!-- Left Column: Text, Bio & Immediate Stats -->
@@ -282,7 +287,7 @@
                         I help brands, agencies, and creators scale across <span class="text-white font-medium">TikTok, Reels, and YouTube Shorts</span>. Specializing in talking-head videos, performance Meta ads, and direct-response UGC — engineered with dynamic pacing, custom UI graphics, and retention psychology.
                     </p>
 
-                    <!-- Immediate Credibility Stats (From V1 Above-the-Fold) -->
+                    <!-- Immediate Credibility Stats -->
                     <div class="grid grid-cols-3 gap-3 max-w-md mx-auto md:mx-0 pt-2">
                         <div class="dark-card py-3 px-2 text-center">
                             <p class="text-xl md:text-2xl font-black text-white">250+</p>
@@ -319,8 +324,27 @@
             </div>
         </section>
 
+        <!-- ==================== TRUSTED BY / BRANDS I WORK WITH ==================== -->
+        <section class="w-full max-w-4xl mx-auto px-6 md:px-12 pb-10">
+            <div class="dark-card p-6 md:p-7 border-white/10 text-center">
+                <p class="text-[10px] md:text-xs font-bold uppercase tracking-[3.5px] text-gray-400 mb-5">
+                    Trusted By Growing Brands & US Agencies
+                </p>
+                <div class="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+                    <!-- Harmony Turbines Logo -->
+                    <div class="logo-badge" title="Harmony Turbines">
+                        <img src="harmony_logo.jpg" alt="Harmony Turbines Logo">
+                    </div>
+                    <!-- Blue Energy Group Logo -->
+                    <div class="logo-badge" title="Blue Energy Group">
+                        <img src="blue_energy_logo.png" alt="Blue Energy Group Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ==================== 2. MEET YOUR EDITOR (INTRO VIDEO) ==================== -->
-        <section id="intro" class="w-full max-w-4xl mx-auto px-6 md:px-12 py-10">
+        <section id="intro" class="w-full max-w-4xl mx-auto px-6 md:px-12 py-8">
             <div class="text-center mb-5">
                 <span class="text-[#3b82f6] text-xs font-bold uppercase tracking-[4px]">✦ Meet Your Editor ✦</span>
             </div>
@@ -465,7 +489,7 @@
                 </div>
             </div>
 
-            <!-- 3 Mini 5-Star Highlight Cards (From V1) -->
+            <!-- 3 Mini 5-Star Highlight Cards -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div class="dark-card p-6 text-center">
                     <div class="text-amber-400 text-xs mb-2">★★★★★</div>
@@ -499,7 +523,7 @@
             </div>
         </section>
 
-        <!-- ==================== 7. COMMON QUESTIONS (FAQ FROM V1) ==================== -->
+        <!-- ==================== 7. COMMON QUESTIONS (FAQ) ==================== -->
         <section id="faq" class="w-full max-w-3xl mx-auto px-6 md:px-12 py-12">
             <div class="text-center mb-8">
                 <span class="text-gray-400 text-xs font-bold uppercase tracking-[4px]">Common Questions</span>
@@ -580,16 +604,13 @@
         }
 
         function filterCategory(category) {
-            // Reset all tab buttons
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById('btn-' + category).classList.add('active');
 
-            // Hide all video sections
             document.getElementById('section-talking-head').classList.add('hidden');
             document.getElementById('section-meta-ads').classList.add('hidden');
             document.getElementById('section-before-after').classList.add('hidden');
 
-            // Show selected section
             document.getElementById('section-' + category).classList.remove('hidden');
         }
     </script>
