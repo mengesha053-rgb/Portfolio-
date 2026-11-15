@@ -1,19 +1,21 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Temesgen Mengesha (Tomi Creative) - Expert Short-Form Video Editor specializing in high-retention Reels, TikToks, and Shorts.">
+    <meta name="description" content="Temesgen Mengesha (Tomi Creative) - Short-Form Video Editor & Creative Strategist specializing in high-retention Reels, TikToks, Shorts, and Meta Ads.">
     <title>Temesgen Mengesha | Tomi Creative</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --accent: #ff4d00;
-            --accent-glow: rgba(255, 77, 0, 0.65);
-            --bg-dark: #050505;
-            --card-bg: #0f0f0f;
+            --accent: #2563eb; /* Electric Trust Blue */
+            --accent-light: #3b82f6;
+            --accent-glow: rgba(37, 99, 235, 0.55);
+            --bg-dark: #050507;
+            --card-bg: #0c0d12;
         }
 
         * { box-sizing: border-box; }
@@ -29,9 +31,9 @@
         /* Navigation Underline Hover Animation */
         .nav-link {
             position: relative;
-            color: #e5e5e5;
+            color: #d1d5db;
             font-weight: 500;
-            font-size: 15px;
+            font-size: 14px;
             padding: 6px 0;
             transition: color 0.3s ease;
             cursor: pointer;
@@ -45,23 +47,23 @@
             bottom: -2px;
             width: 0%;
             height: 2.5px;
-            background-color: var(--accent);
+            background-color: var(--accent-light);
             border-radius: 2px;
-            transition: width 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition: width 0.3s ease;
         }
 
-        .nav-link:hover, .nav-link.active { color: var(--accent); }
-        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .nav-link:hover { color: #ffffff; }
+        .nav-link:hover::after { width: 100%; }
 
-        /* Glowing Orange Portrait Circle */
+        /* Glowing Electric Blue Portrait Circle (From V2 Hero Layout) */
         .portrait-ring {
             position: relative;
-            width: 280px;
-            height: 280px;
+            width: 240px;
+            height: 240px;
             border-radius: 50%;
             padding: 5px;
-            background: linear-gradient(135deg, #ff5e00, #ff2a00);
-            box-shadow: 0 0 60px var(--accent-glow), inset 0 0 25px rgba(255, 77, 0, 0.5);
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            box-shadow: 0 0 55px var(--accent-glow), inset 0 0 20px rgba(59, 130, 246, 0.4);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -71,14 +73,14 @@
 
         @media (min-width: 768px) {
             .portrait-ring {
-                width: 380px;
-                height: 380px;
+                width: 340px;
+                height: 340px;
             }
         }
 
         .portrait-ring:hover {
             transform: scale(1.02);
-            box-shadow: 0 0 85px rgba(255, 77, 0, 0.85);
+            box-shadow: 0 0 80px rgba(59, 130, 246, 0.75);
         }
 
         .portrait-ring img {
@@ -89,27 +91,54 @@
             background-color: #111;
         }
 
-        .btn-orange {
-            background-color: var(--accent);
+        /* Primary CTA Button */
+        .btn-blue {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
             color: #ffffff;
             font-weight: 600;
             border-radius: 9999px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(255, 77, 0, 0.35);
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
         }
 
-        .btn-orange:hover {
-            background-color: #e04400;
+        .btn-blue:hover {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
             transform: translateY(-2px);
-            box-shadow: 0 8px 28px rgba(255, 77, 0, 0.55);
+            box-shadow: 0 8px 28px rgba(59, 130, 246, 0.6);
+        }
+
+        /* Floating Green Upwork Hire Me Button (From V1) */
+        .floating-hire {
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            z-index: 60;
+            background: linear-gradient(135deg, #16a34a, #15803d);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            padding: 12px 20px;
+            border-radius: 9999px;
+            box-shadow: 0 6px 25px rgba(22, 163, 74, 0.5);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .floating-hire:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 10px 32px rgba(22, 163, 74, 0.75);
         }
 
         .social-circle {
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            border: 1.5px solid var(--accent);
-            color: var(--accent);
+            border: 1.5px solid var(--accent-light);
+            color: var(--accent-light);
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -125,30 +154,17 @@
             transform: translateY(-3px);
         }
 
-        /* Page Switching Animation */
-        .page-section {
-            display: none;
-            animation: fadeInPage 0.45s ease forwards;
-        }
-
-        .page-section.active { display: block; }
-
-        @keyframes fadeInPage {
-            from { opacity: 0; transform: translateY(14px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
         .dark-card {
             background: var(--card-bg);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 22px;
+            border-radius: 20px;
             transition: all 0.3s ease;
         }
 
         .dark-card:hover {
-            border-color: rgba(255, 77, 0, 0.5);
-            box-shadow: 0 10px 30px rgba(255, 77, 0, 0.12);
-            transform: translateY(-4px);
+            border-color: rgba(59, 130, 246, 0.45);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.12);
+            transform: translateY(-3px);
         }
 
         .video-container {
@@ -157,7 +173,7 @@
             padding-bottom: 177.77%;
             height: 0;
             background: #000;
-            border-radius: 16px;
+            border-radius: 14px;
             overflow: hidden;
         }
 
@@ -174,110 +190,128 @@
             padding-bottom: 56.25%;
             height: 0;
             background: #000;
-            border-radius: 18px;
+            border-radius: 16px;
             overflow: hidden;
         }
 
         .tab-btn {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.12);
-            color: #a3a3a3;
+            color: #9ca3af;
             transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            border-color: rgba(59, 130, 246, 0.5);
+            color: #ffffff;
         }
 
         .tab-btn.active {
             background: var(--accent);
             color: #ffffff;
             border-color: var(--accent);
-            box-shadow: 0 0 20px rgba(255, 77, 0, 0.4);
+            box-shadow: 0 0 22px rgba(37, 99, 235, 0.45);
         }
 
         details summary::-webkit-details-marker { display: none; }
+        details[open] summary i { transform: rotate(180deg); }
     </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between">
 
-    <!-- TOP NAVIGATION BAR -->
-    <header class="w-full sticky top-0 z-50 bg-[#050505]/90 backdrop-blur-md border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
-            <a onclick="switchPage('home')" class="cursor-pointer text-2xl md:text-3xl font-extrabold tracking-tight select-none">
-                <span class="text-[#ff4d00]">Tomi</span><span class="text-white">Creative</span>
+    <!-- STICKY TOP NAVIGATION BAR (Smooth Single-Page Jump Links) -->
+    <header class="w-full sticky top-0 z-50 bg-[#050507]/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-5 md:px-12 h-16 md:h-20 flex items-center justify-between">
+            <a href="#home" class="cursor-pointer text-xl md:text-2xl font-extrabold tracking-tight select-none no-underline">
+                <span class="text-white">TOMI</span><span class="text-[#3b82f6]">CREATIVE</span>
             </a>
 
             <!-- Desktop Navigation Menu -->
-            <nav class="hidden md:flex items-center gap-9">
-                <a onclick="switchPage('home')" id="nav-home" class="nav-link active">Home</a>
-                <a onclick="switchPage('about')" id="nav-about" class="nav-link">About</a>
-                <a onclick="switchPage('services')" id="nav-services" class="nav-link">Services</a>
-                <a onclick="switchPage('portfolio')" id="nav-portfolio" class="nav-link">Portfolio</a>
-                <a onclick="switchPage('contact')" id="nav-contact" class="nav-link">Contact</a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#intro" class="nav-link">Intro</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#faq" class="nav-link">FAQ</a>
             </nav>
 
-            <div class="flex items-center gap-4">
-                <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" rel="noopener noreferrer" class="btn-orange px-6 py-2.5 text-xs md:text-sm inline-flex items-center gap-2 no-underline">
-                    <i class="fab fa-upwork text-base"></i> Hire Me
+            <div class="flex items-center gap-3">
+                <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" rel="noopener noreferrer" class="btn-blue px-5 py-2 text-xs md:text-sm inline-flex items-center gap-2 no-underline">
+                    <i class="fab fa-upwork text-base"></i> Hire on Upwork
                 </a>
-                <button onclick="toggleMobileMenu()" class="md:hidden text-white text-2xl focus:outline-none cursor-pointer">
+                <button onclick="toggleMobileMenu()" class="md:hidden text-white text-xl p-2 focus:outline-none cursor-pointer" aria-label="Toggle Menu">
                     <i class="fas fa-bars" id="mobile-menu-icon"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-[#0a0a0a] border-b border-white/10 px-6 py-5 space-y-4">
-            <a onclick="switchPage('home'); toggleMobileMenu();" class="block text-base font-semibold text-white hover:text-[#ff4d00] cursor-pointer">Home</a>
-            <a onclick="switchPage('about'); toggleMobileMenu();" class="block text-base font-semibold text-white hover:text-[#ff4d00] cursor-pointer">About</a>
-            <a onclick="switchPage('services'); toggleMobileMenu();" class="block text-base font-semibold text-white hover:text-[#ff4d00] cursor-pointer">Services</a>
-            <a onclick="switchPage('portfolio'); toggleMobileMenu();" class="block text-base font-semibold text-white hover:text-[#ff4d00] cursor-pointer">Portfolio</a>
-            <a onclick="switchPage('contact'); toggleMobileMenu();" class="block text-base font-semibold text-white hover:text-[#ff4d00] cursor-pointer">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0a0b10] border-b border-white/10 px-6 py-4 space-y-3">
+            <a href="#home" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-gray-200 hover:text-[#3b82f6]">Home</a>
+            <a href="#intro" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-gray-200 hover:text-[#3b82f6]">Meet Your Editor</a>
+            <a href="#portfolio" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-gray-200 hover:text-[#3b82f6]">Portfolio</a>
+            <a href="#reviews" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-gray-200 hover:text-[#3b82f6]">Client Reviews</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-gray-200 hover:text-[#3b82f6]">Services & Process</a>
+            <a href="#faq" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-gray-200 hover:text-[#3b82f6]">FAQ</a>
         </div>
     </header>
 
-    <!-- MAIN CONTENT AREA -->
-    <main class="flex-grow flex items-center">
+    <!-- MAIN SINGLE-PAGE SCROLL CONTENT -->
+    <main class="flex-grow">
 
-        <!-- ==================== PAGE 1: HOME ==================== -->
-        <section id="page-home" class="page-section active w-full max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-20">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16">
+        <!-- ==================== 1. HERO SECTION (V2 Layout + V1 Trust Stats) ==================== -->
+        <section id="home" class="w-full max-w-6xl mx-auto px-6 md:px-12 pt-10 pb-14 md:pt-16 md:pb-20">
+            <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-14">
                 
-                <!-- Left Column: Text & Bio -->
-                <div class="w-full md:w-[58%] text-left space-y-5">
-                    <p class="text-white font-bold text-xs md:text-sm tracking-widest uppercase">
-                        HELLO!
-                    </p>
+                <!-- Left Column: Text, Bio & Immediate Stats -->
+                <div class="w-full md:w-[60%] text-center md:text-left space-y-4">
+                    <div class="inline-flex items-center gap-2 bg-[#3b82f6]/10 border border-[#3b82f6]/30 px-3.5 py-1 rounded-full">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-[#3b82f6] font-bold text-[11px] uppercase tracking-wider">Available for Agencies & Creators</span>
+                    </div>
                     
-                    <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight">
-                        I'm <span class="text-[#ff4d00]">Temesgen Mengesha</span>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                        TEMESGEN <span class="text-[#3b82f6]">MENGESHA</span>
                     </h1>
                     
-                    <h2 class="text-lg sm:text-xl md:text-3xl font-bold text-[#ff4d00]">
-                        Short-Form Video Editor & Creative Strategist
+                    <h2 class="text-base sm:text-lg md:text-2xl font-bold text-gray-200">
+                        Short-Form Video Editor & <span class="text-[#3b82f6]">Creative Strategist</span>
                     </h2>
                     
-                    <p class="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed">
-                        I help brands and creators scale across TikTok, Reels, and YouTube Shorts. Specializing in talking-head videos, performance Meta ads, and direct-response UGC — engineered with dynamic pacing, custom UI graphics, and strategic scripting when needed.
+                    <p class="text-gray-400 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto md:mx-0">
+                        I help brands, agencies, and creators scale across <span class="text-white font-medium">TikTok, Reels, and YouTube Shorts</span>. Specializing in talking-head videos, performance Meta ads, and direct-response UGC — engineered with dynamic pacing, custom UI graphics, and retention psychology.
                     </p>
 
-                    <!-- Action Buttons -->
-                    <div class="pt-2 flex flex-wrap items-center gap-4">
-                        <button onclick="switchPage('contact')" class="btn-orange px-7 py-3 text-xs md:text-sm cursor-pointer">
-                            Let's talk
-                        </button>
-                        <button onclick="switchPage('portfolio')" class="px-6 py-3 rounded-full border border-white/20 hover:border-[#ff4d00] text-white hover:text-[#ff4d00] font-semibold text-xs md:text-sm transition cursor-pointer">
-                            View Portfolio
-                        </button>
+                    <!-- Immediate Credibility Stats (From V1 Above-the-Fold) -->
+                    <div class="grid grid-cols-3 gap-3 max-w-md mx-auto md:mx-0 pt-2">
+                        <div class="dark-card py-3 px-2 text-center">
+                            <p class="text-xl md:text-2xl font-black text-white">250+</p>
+                            <p class="text-[9px] md:text-[10px] uppercase tracking-wider text-[#3b82f6] font-bold">Videos Delivered</p>
+                        </div>
+                        <div class="dark-card py-3 px-2 text-center">
+                            <p class="text-xl md:text-2xl font-black text-white">85%+</p>
+                            <p class="text-[9px] md:text-[10px] uppercase tracking-wider text-emerald-400 font-bold">High Retention</p>
+                        </div>
+                        <div class="dark-card py-3 px-2 text-center">
+                            <p class="text-xl md:text-2xl font-black text-white">100%</p>
+                            <p class="text-[9px] md:text-[10px] uppercase tracking-wider text-[#3b82f6] font-bold">Job Success</p>
+                        </div>
                     </div>
 
-                    <!-- Social Icons (Only Upwork icon left for safety) -->
-                    <div class="pt-2 flex items-center gap-3">
-                        <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" rel="noopener noreferrer" class="social-circle" title="Upwork">
-                            <i class="fab fa-upwork"></i>
+                    <!-- Action Buttons -->
+                    <div class="pt-3 flex flex-wrap items-center justify-center md:justify-start gap-3">
+                        <a href="#portfolio" class="btn-blue px-7 py-3 text-xs md:text-sm no-underline">
+                            Explore Portfolio <i class="fas fa-arrow-down ml-1.5 text-xs"></i>
+                        </a>
+                        <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full border border-white/15 hover:border-[#3b82f6] text-white hover:text-[#3b82f6] font-semibold text-xs md:text-sm transition no-underline inline-flex items-center gap-2">
+                            <i class="fab fa-upwork"></i> Upwork Profile
                         </a>
                     </div>
                 </div>
 
-                <!-- Right Column: Glowing Orange Circle Portrait -->
-                <div class="w-full md:w-[42%] flex justify-center md:justify-end">
+                <!-- Right Column: Glowing Electric Blue Portrait Circle -->
+                <div class="w-full md:w-[40%] flex justify-center md:justify-end">
                     <div class="portrait-ring">
                         <img src="me.jpg" alt="Temesgen Mengesha - Tomi Creative">
                     </div>
@@ -286,128 +320,41 @@
             </div>
         </section>
 
-        <!-- ==================== PAGE 2: ABOUT ==================== -->
-        <section id="page-about" class="page-section w-full max-w-6xl mx-auto px-6 md:px-12 py-12">
-            <div class="text-center mb-12">
-                <span class="text-[#ff4d00] text-xs font-bold uppercase tracking-[4px]">Get To Know Me</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold mt-2">About <span class="text-[#ff4d00]">Tomi Creative</span></h2>
+        <!-- ==================== 2. MEET YOUR EDITOR (INTRO VIDEO) ==================== -->
+        <section id="intro" class="w-full max-w-4xl mx-auto px-6 md:px-12 py-10">
+            <div class="text-center mb-5">
+                <span class="text-[#3b82f6] text-xs font-bold uppercase tracking-[4px]">✦ Meet Your Editor ✦</span>
             </div>
-
-            <div class="grid grid-cols-3 gap-4 md:gap-8 max-w-3xl mx-auto mb-14">
-                <div class="dark-card p-6 text-center">
-                    <p class="text-2xl md:text-4xl font-black text-white">250+</p>
-                    <p class="text-[10px] md:text-xs uppercase tracking-wider text-[#ff4d00] font-bold mt-1">Videos Delivered</p>
-                </div>
-                <div class="dark-card p-6 text-center">
-                    <p class="text-2xl md:text-4xl font-black text-white">85%+</p>
-                    <p class="text-[10px] md:text-xs uppercase tracking-wider text-emerald-400 font-bold mt-1">High Retention</p>
-                </div>
-                <div class="dark-card p-6 text-center">
-                    <p class="text-2xl md:text-4xl font-black text-white">100%</p>
-                    <p class="text-[10px] md:text-xs uppercase tracking-wider text-[#ff4d00] font-bold mt-1">Job Success</p>
-                </div>
-            </div>
-
-            <div class="max-w-3xl mx-auto mb-16">
-                <h3 class="text-center text-sm uppercase tracking-[4px] text-gray-400 font-bold mb-5">✦ Meet Your Editor ✦</h3>
-                <div class="dark-card p-2.5 border-[#ff4d00]/40">
-                    <div class="intro-container">
-                        <iframe src="https://www.youtube.com/embed/8mFD6nYudLk" loading="lazy" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="text-center text-xl md:text-2xl font-bold mb-8">Client <span class="text-[#ff4d00]">Feedback & Reviews</span></h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-                <div class="dark-card p-5">
-                    <p class="text-xs text-[#ff4d00] font-bold uppercase mb-3">Recent Project (Short-Form Expert)</p>
-                    <img src="cindy_feedback.png" class="w-full rounded-xl mb-4" alt="Upwork Client Cindy Feedback">
-                    <div class="flex gap-2">
-                        <span class="text-xs bg-white/10 px-3 py-1 rounded-full text-gray-300">Clear Communicator</span>
-                        <span class="text-xs bg-white/10 px-3 py-1 rounded-full text-gray-300">High Quality</span>
-                    </div>
-                </div>
-
-                <div class="dark-card p-5">
-                    <p class="text-xs text-emerald-400 font-bold uppercase mb-3">UGC & Viral Strategy Specialist</p>
-                    <img src="alice_feedback.png" class="w-full rounded-xl mb-4" alt="Upwork Client Alice Feedback">
-                    <div class="flex gap-2">
-                        <span class="text-xs bg-white/10 px-3 py-1 rounded-full text-gray-300">Committed to Quality</span>
-                        <span class="text-xs bg-white/10 px-3 py-1 rounded-full text-gray-300">Solution Oriented</span>
-                    </div>
+            <div class="dark-card p-2.5 md:p-3 border-[#3b82f6]/35 shadow-2xl">
+                <div class="intro-container">
+                    <iframe src="https://www.youtube.com/embed/8mFD6nYudLk" title="Introduction - Tomi Creative" loading="lazy" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
 
-        <!-- ==================== PAGE 3: SERVICES ==================== -->
-        <section id="page-services" class="page-section w-full max-w-6xl mx-auto px-6 md:px-12 py-12">
-            <div class="text-center mb-12">
-                <span class="text-[#ff4d00] text-xs font-bold uppercase tracking-[4px]">What I Offer</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold mt-2">Services & <span class="text-[#ff4d00]">Workflow</span></h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14">
-                <div class="dark-card p-8">
-                    <h3 class="text-[#ff4d00] font-bold text-sm uppercase tracking-widest mb-6">Premium Toolkit</h3>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="bg-[#151515] border border-white/10 rounded-2xl p-6 text-center hover:border-[#ff4d00] transition">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-14 mx-auto mb-4" alt="Adobe Premiere Pro">
-                            <p class="text-xs font-bold uppercase">Premiere Pro</p>
-                        </div>
-                        <div class="bg-[#151515] border border-white/10 rounded-2xl p-6 text-center hover:border-[#ff4d00] transition">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-14 mx-auto mb-4" alt="Adobe After Effects">
-                            <p class="text-xs font-bold uppercase">After Effects</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dark-card p-8">
-                    <h3 class="text-[#ff4d00] font-bold text-sm uppercase tracking-widest mb-6">Strategic Expertise</h3>
-                    <ul class="space-y-3 text-sm text-gray-300 font-medium">
-                        <li class="flex items-center gap-3"><i class="fas fa-bolt text-[#ff4d00]"></i> High-Retention Viral Editing</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-bolt text-[#ff4d00]"></i> Psychology-Based Viral Hooks</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-bolt text-[#ff4d00]"></i> Pattern Interrupt Transitions</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-bolt text-[#ff4d00]"></i> Dynamic & Trendy Typography</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-bolt text-[#ff4d00]"></i> Cinematic Color Grading & Sound Design</li>
-                    </ul>
-                </div>
-            </div>
-
-            <h3 class="text-center text-xl font-bold mb-6">Simple 3-Step <span class="text-[#ff4d00]">Process</span></h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
-                <div class="dark-card p-8 text-center">
-                    <i class="fas fa-cloud-upload-alt text-[#ff4d00] text-3xl mb-4"></i>
-                    <h4 class="font-bold text-sm uppercase mb-2">1. Send Assets</h4>
-                    <p class="text-gray-400 text-xs leading-relaxed">Upload your raw footage and brief through Upwork or Google Drive.</p>
-                </div>
-                <div class="dark-card p-8 text-center border-[#ff4d00]/30">
-                    <i class="fas fa-magic text-[#ff4d00] text-3xl mb-4"></i>
-                    <h4 class="font-bold text-sm uppercase mb-2">2. Magic Happens</h4>
-                    <p class="text-gray-400 text-xs leading-relaxed">I apply viral hooks, clean sound design, and custom motion graphics.</p>
-                </div>
-                <div class="dark-card p-8 text-center">
-                    <i class="fas fa-rocket text-[#ff4d00] text-3xl mb-4"></i>
-                    <h4 class="font-bold text-sm uppercase mb-2">3. Go Viral</h4>
-                    <p class="text-gray-400 text-xs leading-relaxed">Receive your high-retention video in under 48 hours ready to publish.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== PAGE 4: PORTFOLIO ==================== -->
-        <section id="page-portfolio" class="page-section w-full max-w-6xl mx-auto px-6 md:px-12 py-12">
+        <!-- ==================== 3. FEATURED PORTFOLIO (ALL 3 CATEGORIES) ==================== -->
+        <section id="portfolio" class="w-full max-w-6xl mx-auto px-6 md:px-12 py-16">
             <div class="text-center mb-8">
-                <span class="text-[#ff4d00] text-xs font-bold uppercase tracking-[4px]">Featured Work</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold mt-2">My <span class="text-[#ff4d00]">Portfolio</span></h2>
+                <span class="text-[#3b82f6] text-xs font-bold uppercase tracking-[4px]">Explore My Featured Projects</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mt-2">Featured <span class="text-[#3b82f6]">Portfolio</span></h2>
             </div>
 
-            <div class="flex flex-wrap justify-center gap-3 mb-12">
-                <button onclick="filterCategory('talking-head')" id="btn-talking-head" class="tab-btn active px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider cursor-pointer">Talking Head / E-Com</button>
-                <button onclick="filterCategory('meta-ads')" id="btn-meta-ads" class="tab-btn px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider cursor-pointer">Meta Ads / UGC</button>
-                <button onclick="filterCategory('before-after')" id="btn-before-after" class="tab-btn px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider cursor-pointer">Before & After</button>
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button onclick="filterCategory('talking-head')" id="btn-talking-head" class="tab-btn active px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider cursor-pointer">
+                    Talking Head / E-Com
+                </button>
+                <button onclick="filterCategory('meta-ads')" id="btn-meta-ads" class="tab-btn px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider cursor-pointer">
+                    Meta Ads / UGC
+                </button>
+                <button onclick="filterCategory('before-after')" id="btn-before-after" class="tab-btn px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider cursor-pointer">
+                    Before & After
+                </button>
             </div>
 
+            <!-- Tab 1: Talking Head / E-Commerce -->
             <div id="section-talking-head" class="category-group">
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-7 max-w-4xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-7 max-w-4xl mx-auto">
                     <div class="dark-card p-2"><div class="video-container"><iframe src="https://www.youtube.com/embed/s90AxiHl4YU" loading="lazy" allowfullscreen></iframe></div></div>
                     <div class="dark-card p-2"><div class="video-container"><iframe src="https://www.youtube.com/embed/jWjXkw4oJDI" loading="lazy" allowfullscreen></iframe></div></div>
                     <div class="dark-card p-2"><div class="video-container"><iframe src="https://www.youtube.com/embed/cCBRMhCYYfY" loading="lazy" allowfullscreen></iframe></div></div>
@@ -417,8 +364,9 @@
                 </div>
             </div>
 
+            <!-- Tab 2: Meta Ads / UGC -->
             <div id="section-meta-ads" class="category-group hidden">
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-7 max-w-4xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-7 max-w-4xl mx-auto">
                     <div class="dark-card p-2"><div class="video-container"><iframe src="https://www.youtube.com/embed/oq1aj2udEKI" loading="lazy" allowfullscreen></iframe></div></div>
                     <div class="dark-card p-2"><div class="video-container"><iframe src="https://www.youtube.com/embed/GGThGPpNskA" loading="lazy" allowfullscreen></iframe></div></div>
                     <div class="dark-card p-2"><div class="video-container"><iframe src="https://www.youtube.com/embed/YdnC51kAj-Y" loading="lazy" allowfullscreen></iframe></div></div>
@@ -428,8 +376,9 @@
                 </div>
             </div>
 
+            <!-- Tab 3: Before & After -->
             <div id="section-before-after" class="category-group hidden">
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-7 max-w-4xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-7 max-w-4xl mx-auto">
                     <div class="dark-card p-2"><div class="video-container"><iframe src="https://www.youtube.com/embed/CiyOsYsU2rE" loading="lazy" allowfullscreen></iframe></div></div>
                     <div class="dark-card p-2"><div class="video-container"><iframe src="https://www.youtube.com/embed/Ox2M3sUPEyQ" loading="lazy" allowfullscreen></iframe></div></div>
                     <div class="dark-card p-2"><div class="video-container"><iframe src="https://www.youtube.com/embed/0VyMs80wgcM" loading="lazy" allowfullscreen></iframe></div></div>
@@ -437,51 +386,192 @@
             </div>
         </section>
 
-        <!-- ==================== PAGE 5: CONTACT (Upwork Safe) ==================== -->
-        <section id="page-contact" class="page-section w-full max-w-4xl mx-auto px-6 md:px-12 py-12">
-            <div class="text-center mb-10">
-                <span class="text-[#ff4d00] text-xs font-bold uppercase tracking-[4px]">Get In Touch</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold mt-2">Ready to Go <span class="text-[#ff4d00]">Viral?</span></h2>
-                <p class="text-gray-400 text-sm max-w-xl mx-auto mt-3">
-                    Choose my tailored video editing package on Upwork to start your next high-retention project securely within 48 hours.
-                </p>
+        <!-- ==================== 4. SERVICES & WORKFLOW ==================== -->
+        <section id="services" class="w-full max-w-6xl mx-auto px-6 md:px-12 py-14 border-t border-white/5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Premium Toolkit -->
+                <div class="dark-card p-7 md:p-8">
+                    <h3 class="text-[#3b82f6] font-bold text-xs uppercase tracking-[3px] mb-6">Premium Toolkit</h3>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="bg-[#12141c] border border-white/10 rounded-2xl p-6 text-center hover:border-[#3b82f6] transition">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-12 md:w-14 mx-auto mb-3" alt="Adobe Premiere Pro">
+                            <p class="text-xs font-bold uppercase tracking-wider">Premiere Pro</p>
+                        </div>
+                        <div class="bg-[#12141c] border border-white/10 rounded-2xl p-6 text-center hover:border-[#3b82f6] transition">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-12 md:w-14 mx-auto mb-3" alt="Adobe After Effects">
+                            <p class="text-xs font-bold uppercase tracking-wider">After Effects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Expertise -->
+                <div class="dark-card p-7 md:p-8">
+                    <h3 class="text-[#3b82f6] font-bold text-xs uppercase tracking-[3px] mb-6">Strategic Expertise</h3>
+                    <ul class="space-y-3 text-xs md:text-sm text-gray-300 font-medium">
+                        <li class="flex items-center gap-3"><i class="fas fa-bolt text-[#3b82f6]"></i> High-Retention Viral Editing</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-bolt text-[#3b82f6]"></i> Psychology-Based 3-Second Hooks</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-bolt text-[#3b82f6]"></i> Pattern Interrupt Transitions</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-bolt text-[#3b82f6]"></i> Dynamic & Trendy Typography</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-bolt text-[#3b82f6]"></i> Cinematic Color Grading & Sound Design</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-bolt text-[#3b82f6]"></i> Direct-Response Meta Ads & UGC Pacing</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="dark-card p-8 md:p-12 text-center border-[#ff4d00]/40 mb-8 max-w-2xl mx-auto">
-                <h3 class="text-xl md:text-2xl font-bold mb-3">Book Directly on Upwork</h3>
-                <p class="text-gray-400 text-xs md:text-sm max-w-lg mx-auto mb-7 leading-relaxed">
-                    "Average content gets scrolled past. I combine rapid-fire pacing, emotional hooks, and elite sound design to keep your audience glued to the screen."
+            <!-- 3-Step Workflow -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="dark-card p-7 text-center">
+                    <i class="fas fa-cloud-upload-alt text-[#3b82f6] text-2xl mb-3"></i>
+                    <h4 class="font-bold text-xs uppercase tracking-wider mb-2">1. Send Assets</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Upload your raw footage and brief through Upwork or Google Drive.</p>
+                </div>
+                <div class="dark-card p-7 text-center border-[#3b82f6]/35">
+                    <i class="fas fa-magic text-[#3b82f6] text-2xl mb-3"></i>
+                    <h4 class="font-bold text-xs uppercase tracking-wider mb-2">2. Magic Happens</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">I apply viral hooks, clean sound design, and custom motion graphics.</p>
+                </div>
+                <div class="dark-card p-7 text-center">
+                    <i class="fas fa-rocket text-[#3b82f6] text-2xl mb-3"></i>
+                    <h4 class="font-bold text-xs uppercase tracking-wider mb-2">3. Go Viral</h4>
+                    <p class="text-gray-400 text-xs leading-relaxed">Receive your high-retention video ready to publish and scale.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 5. SUCCESS ON UPWORK (SOCIAL PROOF) ==================== -->
+        <section id="reviews" class="w-full max-w-6xl mx-auto px-6 md:px-12 py-14 border-t border-white/5">
+            <div class="text-center mb-10">
+                <span class="text-[#3b82f6] text-xs font-bold uppercase tracking-[4px]">Success On Upwork (Social Proof)</span>
+                <h2 class="text-2xl md:text-4xl font-extrabold mt-2">Verified Client <span class="text-[#3b82f6]">Reviews</span></h2>
+            </div>
+
+            <!-- Verified Screenshot Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div class="dark-card p-5">
+                    <p class="text-xs text-[#3b82f6] font-bold uppercase mb-3">Recent Project (Short-Form Expert)</p>
+                    <img src="cindy_feedback.png" class="w-full rounded-xl mb-4" alt="Upwork Client Cindy Feedback">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[11px] bg-white/10 px-3 py-1 rounded-full text-gray-300">Clear Communicator</span>
+                        <span class="text-[11px] bg-white/10 px-3 py-1 rounded-full text-gray-300">High Quality</span>
+                    </div>
+                </div>
+
+                <div class="dark-card p-5">
+                    <p class="text-xs text-emerald-400 font-bold uppercase mb-3">UGC & Viral Strategy Specialist</p>
+                    <img src="alice_feedback.png" class="w-full rounded-xl mb-4" alt="Upwork Client Alice Feedback">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[11px] bg-white/10 px-3 py-1 rounded-full text-gray-300">Committed to Quality</span>
+                        <span class="text-[11px] bg-white/10 px-3 py-1 rounded-full text-gray-300">Solution Oriented</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 Mini 5-Star Highlight Cards (From V1) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div class="dark-card p-6 text-center">
+                    <div class="text-amber-400 text-xs mb-2">★★★★★</div>
+                    <p class="text-gray-300 text-xs italic mb-3">"Exceptional quality and fast delivery. Understands the vision perfectly."</p>
+                    <p class="text-[10px] font-bold text-[#3b82f6] uppercase tracking-wider">Upwork Verified Review</p>
+                </div>
+                <div class="dark-card p-6 text-center">
+                    <div class="text-amber-400 text-xs mb-2">★★★★★</div>
+                    <p class="text-gray-300 text-xs italic mb-3">"He understands viral trends and hooks. Engagement went up significantly!"</p>
+                    <p class="text-[10px] font-bold text-[#3b82f6] uppercase tracking-wider">Jason D. • Influencer</p>
+                </div>
+                <div class="dark-card p-6 text-center">
+                    <div class="text-amber-400 text-xs mb-2">★★★★★</div>
+                    <p class="text-gray-300 text-xs italic mb-3">"Incredible storytelling. Fast, professional, and very creative."</p>
+                    <p class="text-[10px] font-bold text-[#3b82f6] uppercase tracking-wider">Mark K. • Creator</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 6. READY TO GO VIRAL CTA BOX ==================== -->
+        <section class="w-full max-w-4xl mx-auto px-6 md:px-12 py-10">
+            <div class="dark-card p-8 md:p-12 text-center border-[#3b82f6]/45 shadow-[0_0_50px_rgba(37,99,235,0.15)]">
+                <h2 class="text-2xl md:text-4xl font-extrabold italic tracking-tight mb-2">READY TO GO VIRAL?</h2>
+                <p class="text-xs font-bold uppercase tracking-widest text-[#3b82f6] mb-4">Don't Settle For Boring Content.</p>
+                <p class="text-gray-400 text-xs md:text-sm max-w-xl mx-auto mb-7 leading-relaxed">
+                    "Average content gets scrolled past. I combine rapid-fire pacing, emotional hooks, and elite sound design to keep your audience glued to the screen. Choose my tailored package on Upwork and get your viral-ready video in <span class="text-white underline font-semibold">less than 48 hours</span>."
                 </p>
-                <a href="https://www.upwork.com/services/product/video-audio-high-retention-talking-head-videos-for-reels-tiktok-and-shorts-2120434649661260821?ref=project_share" target="_blank" rel="noopener noreferrer" class="btn-orange px-8 py-4 text-sm inline-flex items-center gap-2 no-underline">
+                <a href="https://www.upwork.com/services/product/video-audio-high-retention-talking-head-videos-for-reels-tiktok-and-shorts-2120434649661260821?ref=project_share" target="_blank" rel="noopener noreferrer" class="btn-blue px-8 py-4 text-xs md:text-sm uppercase tracking-wider inline-flex items-center gap-2 no-underline">
                     Start Your Project Now <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </section>
 
+        <!-- ==================== 7. COMMON QUESTIONS (FAQ FROM V1) ==================== -->
+        <section id="faq" class="w-full max-w-3xl mx-auto px-6 md:px-12 py-12">
+            <div class="text-center mb-8">
+                <span class="text-gray-400 text-xs font-bold uppercase tracking-[4px]">Common Questions</span>
+            </div>
+
+            <div class="space-y-3">
+                <details class="dark-card p-5 cursor-pointer group">
+                    <summary class="flex items-center justify-between font-bold text-xs md:text-sm uppercase tracking-wide text-gray-200">
+                        <span>How long does one video take?</span>
+                        <i class="fas fa-chevron-down text-[#3b82f6] transition-transform duration-300"></i>
+                    </summary>
+                    <p class="text-gray-400 text-xs md:text-sm mt-3 leading-relaxed">
+                        Standard turnaround time is 24 to 48 hours per short-form video, depending on complexity and motion graphics requirements.
+                    </p>
+                </details>
+
+                <details class="dark-card p-5 cursor-pointer group">
+                    <summary class="flex items-center justify-between font-bold text-xs md:text-sm uppercase tracking-wide text-gray-200">
+                        <span>Do you provide the B-roll and music?</span>
+                        <i class="fas fa-chevron-down text-[#3b82f6] transition-transform duration-300"></i>
+                    </summary>
+                    <p class="text-gray-400 text-xs md:text-sm mt-3 leading-relaxed">
+                        Yes! I have access to premium stock footage libraries, copyright-free trending music, and high-impact sound effects (SFX) to elevate your raw footage.
+                    </p>
+                </details>
+
+                <details class="dark-card p-5 cursor-pointer group">
+                    <summary class="flex items-center justify-between font-bold text-xs md:text-sm uppercase tracking-wide text-gray-200">
+                        <span>What if I need a revision?</span>
+                        <i class="fas fa-chevron-down text-[#3b82f6] transition-transform duration-300"></i>
+                    </summary>
+                    <p class="text-gray-400 text-xs md:text-sm mt-3 leading-relaxed">
+                        Client satisfaction is my top priority. I include fast, collaborative revisions until you are 100% happy with the pacing, captions, and final look.
+                    </p>
+                </details>
+
+                <details class="dark-card p-5 cursor-pointer group">
+                    <summary class="flex items-center justify-between font-bold text-xs md:text-sm uppercase tracking-wide text-gray-200">
+                        <span>Do you offer ongoing monthly packages or bulk discounts?</span>
+                        <i class="fas fa-chevron-down text-[#3b82f6] transition-transform duration-300"></i>
+                    </summary>
+                    <p class="text-gray-400 text-xs md:text-sm mt-3 leading-relaxed">
+                        Yes! Most of my agency and creator clients work with me on weekly or monthly retainer batches (15–30+ videos/month) with dedicated priority turnaround.
+                    </p>
+                </details>
+
+                <details class="dark-card p-5 cursor-pointer group">
+                    <summary class="flex items-center justify-between font-bold text-xs md:text-sm uppercase tracking-wide text-gray-200">
+                        <span>What software do you use for editing?</span>
+                        <i class="fas fa-chevron-down text-[#3b82f6] transition-transform duration-300"></i>
+                    </summary>
+                    <p class="text-gray-400 text-xs md:text-sm mt-3 leading-relaxed">
+                        I edit natively in Adobe Premiere Pro and create custom animations, UI callouts, and visual hooks in Adobe After Effects.
+                    </p>
+                </details>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="text-center py-6 border-t border-white/5 text-gray-500 text-xs">
-        <p>© 2026 <span class="text-[#ff4d00] font-semibold">Tomi Creative</span> • Temesgen Mengesha. All Rights Reserved.</p>
+    <!-- FLOATING GREEN UPWORK HIRE ME BUTTON -->
+    <a href="https://www.upwork.com/freelancers/~0130453a58feda9741" target="_blank" rel="noopener noreferrer" class="floating-hire">
+        <i class="fab fa-upwork text-base"></i> HIRE ME
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-8 border-t border-white/5 text-gray-500 text-xs">
+        <p>© 2026 <span class="text-[#3b82f6] font-semibold">TOMI CREATIVE</span> • TEMESGEN MENGESHA. ALL RIGHTS RESERVED.</p>
     </footer>
 
     <script>
-        function switchPage(pageName) {
-            document.querySelectorAll('.page-section').forEach(section => {
-                section.classList.remove('active');
-            });
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('active');
-            });
-
-            const targetSection = document.getElementById('page-' + pageName);
-            const targetNav = document.getElementById('nav-' + pageName);
-
-            if (targetSection) targetSection.classList.add('active');
-            if (targetNav) targetNav.classList.add('active');
-
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             const icon = document.getElementById('mobile-menu-icon');
@@ -491,15 +581,19 @@
         }
 
         function filterCategory(category) {
+            // Reset all tab buttons
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById('btn-' + category).classList.add('active');
 
+            // Hide all video sections
             document.getElementById('section-talking-head').classList.add('hidden');
             document.getElementById('section-meta-ads').classList.add('hidden');
             document.getElementById('section-before-after').classList.add('hidden');
 
+            // Show selected section
             document.getElementById('section-' + category).classList.remove('hidden');
         }
     </script>
 </body>
 </html>
+```
